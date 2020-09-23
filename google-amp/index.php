@@ -124,7 +124,7 @@
     </main>
 
     <footer>
-      <small>Built with <a href="https://picocss.com">Pico</a> • <a href="https://github.com/picocss/examples/google-amp/">Source code</a></small>
+      <small>Built with <a href="https://picocss.com">Pico</a> • <a href="https://github.com/picocss/examples/tree/master/google-amp">Source code</a></small>
     </footer>
 
   </body>
