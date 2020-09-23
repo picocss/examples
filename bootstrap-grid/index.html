@@ -1,0 +1,118 @@
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+    <title>Bootstrap grid system example • Pico.css</title>
+    <meta name="description" content="Custom CSS build with the Bootstrap grid system to manage complex grid layouts in Pico.">
+    <link rel="shortcut icon" href="https://picocss.com/favicon.ico">
+    <link rel="canonical" href="https://picocss.com/examples/bootstrap-grid/">
+
+     <!-- Pico.css custom build with Bootstrap grid -->
+    <link rel="stylesheet" href="css/pico-bootstrap-grid.min.css">
+
+    <style>
+    .row-example {
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+    }
+    .col-example {
+      text-align: center;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      margin-bottom: 1rem;
+      background: var(--code-background);
+    }
+    </style>
+  </head>
+
+  <body>
+
+    <header class="container">
+      <hgroup>
+        <h1>Bootstrap grid system</h1>
+        <h2>Custom CSS build with the <a href="https://getbootstrap.com/docs/4.5/layout/grid/">Bootstrap grid system</a> to manage complex grid layouts in <a href="https://github.com/picocss/pico">Pico</a></h2>
+      </hgroup>
+      <nav>
+        <ul>
+          <li>Theme:</li>
+          <li><a href="#" data-theme-switcher="auto">Auto</a></li>
+          <li><a href="#" data-theme-switcher="light">Light</a></li>
+          <li><a href="#" data-theme-switcher="dark">Dark</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+
+      <p>For this example, we have merged and compiled Pico design system with the Bootstrap grid system (<a href="https://github.com/picocss/examples/blob/master/bootstrap-grid/scss/pico-bootstrap-grid.scss">Source code here</a>).</p>
+
+      <p>
+        This allows to use the powerful Boostrap grid system to build layouts with:
+        <a href="https://getbootstrap.com/docs/4.5/layout/grid/#auto-layout-columns">Auto-columns</a>,
+        <a href="https://getbootstrap.com/docs/4.5/layout/grid/#responsive-classes">Responsive classes</a>,
+        <a href="https://getbootstrap.com/docs/4.5/layout/grid/#alignment">Alignment</a>,
+        <a href="https://getbootstrap.com/docs/4.5/layout/grid/#reordering">Reordering</a> and
+        <a href="https://getbootstrap.com/docs/4.5/layout/grid/#nesting">Nesting</a>.
+      </p>
+
+      <div class="row row-example">
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+          <div class="col-example">1</div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+          <div class="col-example">2</div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+          <div class="col-example">3</div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+          <div class="col-example">4</div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+          <div class="col-example">5</div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+          <div class="col-example">6</div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+          <div class="col-example">7</div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+          <div class="col-example">8</div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+          <div class="col-example">9</div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+          <div class="col-example">10</div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+          <div class="col-example">11</div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+          <div class="col-example">12</div>
+        </div>
+      </div>
+
+      <p>This grid example displays:</p>
+      <ul>
+        <li>1 column on <strong>extra small</strong> devices <code><576px</code></li>
+        <li>2 columns on <strong>small</strong> devices <code>≥576px</code></li>
+        <li>3 columns on <strong>medium</strong> devices <code>≥768px</code></li>
+        <li>4 columns on <strong>large</strong> devices <code>≥992px</code></li>
+        <li>6 columns on <strong>extra large</strong> devices <code>≥1200px</code></li>
+      </ul>
+
+    </main>
+
+    <footer class="container">
+      <small>Built with <a href="https://picocss.com">Pico</a> • <a href="https://github.com/picocss/examples/blob/master/bootstrap-grid/">Source code</a></small>
+    </footer>
+
+    <!-- Minimal theme switcher -->
+    <script src="../_includes/js/minimal-theme-switcher.js"></script>
+
+  </body>
+
+</html>
