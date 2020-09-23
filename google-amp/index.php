@@ -119,7 +119,7 @@
         </form>
       </article>
 
-      <p>For this example, we have compiled a custom and class-less version of pico (<a href="https://github.com/picocss/examples/blob/master/google-amp/scss/pico.google-amp.scss">See here</a>).</p>
+      <p>For this example, we have compiled a custom and class-less Pico stylesheet (<a href="https://github.com/picocss/examples/blob/master/google-amp/scss/pico.google-amp.scss">Source code here</a>).</p>
 
     </main>
 
