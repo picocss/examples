@@ -1,0 +1,87 @@
+/**
+ * Custom Styles for Google Amp example
+ */
+
+// Layout
+body {
+  padding-top: 1 + $spacing-gutter*2;
+}
+body > nav {
+  background-color: var(--card-background);
+  box-shadow: var(--card-shadow);
+}
+
+// Typography
+@font-face {
+  font-display: swap;
+  src: local('Calistoga Regular'), local('Calistoga-Regular'), url(https://fonts.gstatic.com/s/calistoga/v1/6NUU8F2OJg6MeR7l4e0fs8wB49dJfg.woff2) format('woff2');
+  font-family: 'Calistoga';
+  font-style: normal;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+h1, h2, h3, button {
+  font-family: 'Calistoga', serif;
+  font-weight: 400;
+}
+nav button,
+nav button:hover,
+nav button:active,
+nav button:focus {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+// Fixed navbar
+body > nav {
+  z-index: 99;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 0 $spacing-gutter;
+
+  h1 {
+    margin-bottom: 0;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+  }
+
+  a,
+  button {
+    color: var(--secondary);
+  }
+}
+
+// Sidebar
+amp-sidebar {
+  position: relative;
+  padding: 1rem;
+  background-color: var(--primary);
+  box-shadow: var(--card-shadow);
+
+  button {
+    position: absolute;
+    top: $spacing-gutter;
+    right: $spacing-gutter;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 2rem;
+    line-height: 1;
+  }
+
+  aside {
+    min-width: 12rem;
+    margin-top: $spacing-typography;
+  }
+
+  h3,
+  a,
+  a:hover,
+  a:active,
+  a:focus {
+    color: var(--primary-inverse);
+  }
+}

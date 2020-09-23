@@ -1,0 +1,59 @@
+/* Commons tags */
+:root {
+  --spacing: 3rem;
+}
+html, p {
+  font-weight: 300;
+}
+h1 {
+  font-weight: 800;
+}
+h2, h3, hgroup>:last-child {
+  font-weight: 200;
+}
+small {
+  color: var(--muted-text);
+}
+
+/* Header */
+.hero {
+  background-color: #394046;
+  background-image: url("https://source.unsplash.com/DNQ-M93tHmA/3000x1000");
+  background-position: center;
+  background-size: cover;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--spacing) 0;
+}
+header hgroup>:last-child {
+  color: var(--h3);
+}
+header hgroup {
+  margin-bottom: var(--spacing);
+}
+
+/* Main */
+main .grid > * {
+  margin-bottom: var(--spacing);
+}
+@media (min-width: 992px) {
+  main .grid {
+    grid-column-gap: var(--spacing);
+    grid-template-columns: auto 25%;
+  }
+}
+form.grid {
+  grid-row-gap: 0;
+}
+
+/* Aside nav */
+aside img {
+  margin-bottom: .25rem;
+}
+aside p {
+  margin-bottom: var(--spacing);
+  line-height: 1.25;
+}

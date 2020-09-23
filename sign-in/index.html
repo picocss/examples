@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+    <title>Sign in example • Pico.css</title>
+    <meta name="description" content="A minimalist layout for Login pages. Built with Pico CSS.">
+    <link rel="shortcut icon" href="https://picocss.com/favicon.ico">
+    <link rel="canonical" href="https://picocss.com/examples/sign-in/">
+
+     <!-- Pico.css -->
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+
+    <!-- Custom styles for this example -->
+    <link rel="stylesheet" href="custom.css">
+    <style>
+
+    </style>
+  </head>
+
+  <body>
+
+    <nav class="container-fluid">
+      <ul>
+        <li><a href="./" class="contrast"><strong>Brand</strong></a></li>
+      </ul>
+      <ul>
+        <li><a href="#" class="contrast" data-theme-switcher="auto">Auto</a></li>
+        <li><a href="#" class="contrast" data-theme-switcher="light">Light</a></li>
+        <li><a href="#" class="contrast" data-theme-switcher="dark">Dark</a></li>
+      </ul>
+    </nav>
+
+    <main class="container">
+      <article class="grid">
+        <div>
+          <hgroup>
+            <h1>Sign in</h1>
+            <h2>A minimalist layout for Login pages</h2>
+          </hgroup>
+          <form>
+            <input type="text" name="login" placeholder="Login" aria-label="Login" autocomplete="nickname" required>
+            <input type="password" name="password" placeholder="Password" aria-label="Password" autocomplete="current-password" required>
+            <fieldset>
+              <label for="remember">
+                <input type="checkbox" role="switch" id="remember" name="remember" aria-checked="false">
+                Remember me
+              </label>
+            </fieldset>
+            <button type="submit" class="contrast">Login</button>
+          </form>
+        </div>
+        <div></div>
+      </article>
+    </main>
+
+    <footer class="container-fluid">
+      <small>Built with <a href="https://picocss.com">Pico</a> • <a href="https://github.com/picocss/examples/sign-in/">Source code</a></small>
+    </footer>
+
+    <!-- Minimal theme switcher -->
+    <script src="../_includes/js/minimal-theme-switcher.js"></script>
+
+  </body>
+
+</html>
