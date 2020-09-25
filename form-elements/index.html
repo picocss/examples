@@ -1,0 +1,142 @@
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+    <title>Form elements example • Pico.css</title>
+    <meta name="description" content="Semantic HTML form markup, without any .classes or JavaScript. Built with Pico CSS.">
+    <link rel="shortcut icon" href="https://picocss.com/favicon.ico">
+    <link rel="canonical" href="https://picocss.com/examples/form-elements/">
+
+     <!-- Pico.css -->
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+
+    <!-- Custom styles for this example -->
+    <style>
+      form article {
+        margin-top: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <header class="container">
+      <hgroup>
+        <h1>Form elements</h1>
+        <h2>Semantic HTML form markup, without any <code>.classes</code> or <code>JavaScript</code></h2>
+      </hgroup>
+      <nav>
+        <ul>
+          <li>Theme:</li>
+          <li><a href="#" data-theme-switcher="auto">Auto</a></li>
+          <li><a href="#" data-theme-switcher="light">Light</a></li>
+          <li><a href="#" data-theme-switcher="dark">Dark</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+
+      <form>
+        <article>
+        <!-- Search -->
+        <input type="search" id="search" name="search" placeholder="Search">
+
+        <!-- Color -->
+        <label for="color-picker">Color
+          <input type="color" value="#FFC107" id="color-picker" name="color-picker">
+        </label>
+
+        <!-- Date & time -->
+        <label for="time">Time
+          <input type="time" id="time" name="time" >
+        </label>
+        <label for="date">Date
+          <input type="date" id="date" name="date" >
+        </label>
+        <label for="datetime">Datetime
+          <input type="datetime-local" id="datetime" name="datetime" >
+        </label>
+        <label for="week">Week
+          <input type="week" id="week" name="week" >
+        </label>
+        <label for="month">Month
+          <input type="month" id="month" name="month" >
+        </label>
+
+        <!-- Select -->
+        <label for="select">Select</label>
+        <select id="select" name="select">
+          <option selected>Choose...</option>
+          <option>...</option>
+        </select>
+
+        <!-- Radio buttons -->
+        <fieldset>
+          <legend><strong>Radio buttons</strong></legend>
+          <label for="radio-1">
+            <input type="radio" id="radio-1" name="radio" value="radio-checked" checked>
+            Radio button 1
+          </label>
+          <label for="radio-2">
+            <input type="radio" id="radio-2" name="radio" value="radio-default">
+            Radio button 2
+          </label>
+        </fieldset>
+
+        <!-- Checkboxes -->
+        <fieldset>
+          <legend><strong>Checkboxes</strong></legend>
+          <label for="checkbox-1">
+            <input type="checkbox" id="checkbox-1" name="checkbox-1" checked>
+            Checkbox 1
+          </label>
+          <label for="checkbox-2">
+            <input type="checkbox" id="checkbox-2" name="checkbox-2">
+            Checkbox 2
+          </label>
+        </fieldset>
+
+        <!-- Switch -->
+        <fieldset>
+          <legend><strong>Switches</strong></legend>
+          <label for="switch-1">
+            <input type="checkbox" id="switch-1" name="switch-1" role="switch" aria-checked="true" checked>
+            Switch 1
+          </label>
+          <label for="switch-2">
+            <input type="checkbox" id="switch-2" name="switch-2" role="switch" aria-checked="false">
+            Switch 2
+          </label>
+        </fieldset>
+
+        <!-- File browser -->
+        <label for="file">File browser
+          <input type="file" id="file" name="file">
+        </label>
+
+        <!-- Range slider control -->
+        <label for="range">Range slider
+          <input type="range" min="0" max="100" value="50" id="range" name="range">
+        </label>
+
+        <!-- Buttons -->
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+
+        </article>
+      </form>
+
+    </main>
+
+    <footer class="container">
+      <small>Built with <a href="https://picocss.com">Pico</a> • <a href="https://github.com/picocss/examples/blob/master/form-elements/index.html">Source code</a></small>
+    </footer>
+
+    <!-- Minimal theme switcher -->
+    <script src="../_includes/js/minimal-theme-switcher.js"></script>
+
+  </body>
+
+</html>

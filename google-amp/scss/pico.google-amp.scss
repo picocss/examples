@@ -17,6 +17,9 @@ $enable-class-container: false;
 // Enable .classes
 $enable-classes: false;
 
+// Enable overriding with !important (used for <article>, `reduce-motion`, [type="search"])
+$enable-important: false;
+
 // Breakpoints
 $breakpoints: (
   xs: 0,

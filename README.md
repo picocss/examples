@@ -18,5 +18,8 @@ Minimalist templates to discover Pico in action:
 - **[Sign in](https://picocss.com/examples/sign-in/)**  
   A minimalist layout for Login pages
 
+- **[Form elements](https://picocss.com/examples/form-elements/)**  
+  Semantic HTML form markup, without any `.classes` or `JavaScript`
+
 - **[Bootstrap grid system](https://picocss.com/examples/bootstrap-grid/)**  
   Custom CSS build with the Bootstrap grid system to manage complex grid layouts in Pico
