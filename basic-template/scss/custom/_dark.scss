@@ -1,0 +1,164 @@
+// Dark theme (Auto)
+// Automatically enabled if user has Dark mode enabled
+
+@media only screen and (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+
+    // Document
+    --background:              #{darken($grey-900, 6%)};
+
+    // Typography
+    --text:                    #{$grey-300};
+    --h1:                      #{saturate($grey-50,  50%)};
+    --h2:                      #{saturate($grey-100, 40%)};
+    --h3:                      #{saturate($grey-200, 20%)};
+    --h4:                      #{saturate($grey-300, 20%)};
+    --h5:                      #{saturate($grey-400, 10%)};
+    --h6:                      #{saturate($grey-500, 0%)};
+
+    // Primary Call-to-Action and links
+    --primary:                 #{$primary-600};
+    --primary-border:          var(--primary);
+    --primary-hover:           #{$primary-500};
+    --primary-hover-border:    var(--primary-hover);
+    --primary-focus:           #{rgba($primary-600, .125)};
+    --primary-inverse:         #{$white};
+
+    // // Secondary Call-to-Action, links and kbd
+    --secondary:               #{$grey-600};
+    --secondary-border:        var(--secondary);
+    --secondary-hover:         #{$grey-500};
+    --secondary-hover-border:  var(--secondary-hover);
+    --secondary-focus:         #{rgba($grey-600, .125)};
+    --secondary-inverse:       #{$white};
+
+    // Contrast Call-to-Action and Tooltips
+    --contrast:                #{$grey-100};
+    --contrast-border:         var(--contrast);
+    --contrast-hover:          #{$white};
+    --contrast-hover-border:   var(--contrast-hover);
+    --contrast-focus:          #{rgba($grey-600, .125)};
+    --contrast-inverse:        #{darken($grey-900, 6%)};
+
+    // Form elements
+    --input-background:        #{mix($grey-800, $grey-900, 25%)};
+    --input-border:            #{mix($grey-800, $grey-900, 25%)};
+    --input-hover-background:  var(--input-background);
+    --input-hover-border:      var(--primary);
+    --input-focus:             var(--primary-focus);
+    --input-inverse:           var(--primary-inverse);
+
+    // Button
+    --button-shadow:           0 0.0625rem 0.1875rem #{$black}, 0 0.0625rem 0.125rem #{$black};
+    --button-hover-shadow:     0 0.1875rem 0.3750rem #{$black}, 0 0.1875rem 0.375rem #{$black};
+
+    // Utilities states
+    --valid:                   #{$green-700};
+    --invalid:                 #{$red-900};
+    --mark:                    #{rgba($amber-200, .125)};
+    --mark-text:               #{$white};
+    --muted-text:              #{$grey-500};
+    --muted-background:        #{darken($grey-900, 2%)};
+    --muted-border:            #{darken($grey-900, 2%)};
+
+    // Card
+    --card-background:         #{darken($grey-900, 2%)};
+    --card-sections:           #{darken($grey-900, 4%)};
+    --card-shadow:             0 0.125rem 1rem #{rgba($black, 0.08)}, 0 0.125rem 2rem #{rgba($black, 0.04)}, 0 0 0 0.0625rem #{rgba($black, 0.1)};
+
+    // Code
+    --code-background:         #{darken($grey-900, 4%)};
+    --code-inlined:            #{rgba($grey-700, .25)};
+    --code-color-1:            #{$grey-500};
+    --code-color-2:            #{hsl(330, 30%, 50%)};
+    --code-color-3:            #{hsl(185, 30%, 50%)};
+    --code-color-4:            #{hsl(40,  10%, 50%)};
+    --code-color-5:            #{mix($grey-600, $grey-700)};
+
+    // Table
+    --table-border:            #{rgba($grey-500, .075)};
+    --table-stripping:         #{rgba($grey-500, .05)};
+  }
+}
+
+
+
+// Dark theme (Forced)
+// Enabled if forced with data-theme="dark"
+[data-theme="dark"] {
+
+  // Document
+  --background:              #{darken($grey-900, 6%)};
+
+  // Typography
+  --text:                    #{$grey-300};
+  --h1:                      #{saturate($grey-50,  50%)};
+  --h2:                      #{saturate($grey-100, 40%)};
+  --h3:                      #{saturate($grey-200, 20%)};
+  --h4:                      #{saturate($grey-300, 20%)};
+  --h5:                      #{saturate($grey-400, 10%)};
+  --h6:                      #{saturate($grey-500, 0%)};
+
+  // Primary Call-to-Action and links
+  --primary:                 #{$primary-600};
+  --primary-border:          var(--primary);
+  --primary-hover:           #{$primary-500};
+  --primary-hover-border:    var(--primary-hover);
+  --primary-focus:           #{rgba($primary-600, .25)};
+  --primary-inverse:         #{$white};
+
+  // // Secondary Call-to-Action, links and kbd
+  --secondary:               #{$grey-600};
+  --secondary-border:        var(--secondary);
+  --secondary-hover:         #{$grey-500};
+  --secondary-hover-border:  var(--secondary-hover);
+  --secondary-focus:         #{rgba($grey-600, .25)};
+  --secondary-inverse:       #{$white};
+
+  // Contrast Call-to-Action and Tooltips
+  --contrast:                #{$grey-100};
+  --contrast-border:         var(--contrast);
+  --contrast-hover:          #{$white};
+  --contrast-hover-border:   var(--contrast-hover);
+  --contrast-focus:          #{rgba($grey-600, .25)};
+  --contrast-inverse:        #{darken($grey-900, 6%)};
+
+  // Form elements
+  --input-background:        #{$grey-900};
+  --input-border:            #{$grey-900};
+  --input-hover-background:  var(--input-background);
+  --input-hover-border:      var(--primary);
+  --input-focus:             var(--primary-focus);
+  --input-inverse:           var(--primary-inverse);
+
+  // Button
+  --button-shadow:           0 0 0 0 rgba(0, 0, 0, 0);
+  --button-hover-shadow:     0 0 0 0 rgba(0, 0, 0, 0);
+
+  // Utilities states
+  --valid:                   #{$green-700};
+  --invalid:                 #{$red-900};
+  --mark:                    #{rgba($amber-200, .125)};
+  --mark-text:               #{$white};
+  --muted-text:              #{$grey-500};
+  --muted-background:        #{mix($grey-800, $grey-900)};
+  --muted-border:            #{mix($grey-800, $grey-900)};
+
+  // Card
+  --card-background:         #{darken($grey-900, 2%)};
+  --card-sections:           #{darken($grey-900, 4%)};
+  --card-shadow:             0 0.125rem 1rem #{rgba($black, 0.08)}, 0 0.125rem 2rem #{rgba($black, 0.04)}, 0 0 0 0.0625rem #{rgba($black, 0.1)};
+
+  // Code
+  --code-background:         #{darken($grey-900, 4%)};
+  --code-inlined:            #{rgba($grey-700, .25)};
+  --code-color-1:            #{$grey-500};
+  --code-color-2:            #{hsl(330, 30%, 50%)};
+  --code-color-3:            #{hsl(185, 30%, 50%)};
+  --code-color-4:            #{hsl(40,  10%, 50%)};
+  --code-color-5:            #{mix($grey-600, $grey-700)};
+
+  // Table
+  --table-border:            #{rgba($grey-500, .075)};
+  --table-stripping:         #{rgba($grey-500, .05)};
+}

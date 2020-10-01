@@ -1,0 +1,37 @@
+// Navy-Grey
+$grey-hue: 205 !default;
+$grey-50:  hsl($grey-hue, 30%, 94%) !default;
+$grey-100: hsl($grey-hue, 28%, 86%) !default;
+$grey-200: hsl($grey-hue, 26%, 77%) !default;
+$grey-300: hsl($grey-hue, 24%, 68%) !default;
+$grey-400: hsl($grey-hue, 22%, 59%) !default;
+$grey-500: hsl($grey-hue, 20%, 50%) !default;
+$grey-600: hsl($grey-hue, 25%, 41%) !default;
+$grey-700: hsl($grey-hue, 30%, 32%) !default;
+$grey-800: hsl($grey-hue, 35%, 23%) !default;
+$grey-900: hsl($grey-hue, 40%, 15%) !default;
+
+// Teal
+$primary-hue: 180;
+$primary-50:  hsl($primary-hue, 90%,  89%) !default;
+$primary-100: hsl($primary-hue, 88%,  81%) !default;
+$primary-200: hsl($primary-hue, 86%,  72%) !default;
+$primary-300: hsl($primary-hue, 84%,  63%) !default;
+$primary-400: hsl($primary-hue, 82%,  54%) !default;
+$primary-500: hsl($primary-hue, 80%,  45%) !default;
+$primary-600: hsl($primary-hue, 85%,  36%) !default;
+$primary-700: hsl($primary-hue, 90%,  27%) !default;
+$primary-800: hsl($primary-hue, 95%,  18%) !default;
+$primary-900: hsl($primary-hue, 100%, 10%) !default;
+
+// Black & White
+$black: #000 !default;
+$white: #FFF !default;
+
+// Miscs
+$amber-200: hsl(45,  100%, 75%) !default;
+$green-500: hsl(160, 50%,  40%) !default;
+$green-600: hsl(160, 55%,  35%) !default;
+$green-700: hsl(160, 60%,  30%) !default;
+$red-700:   hsl(0,   45%,  50%) !default;
+$red-900:   hsl(0,   45%,  40%) !default;

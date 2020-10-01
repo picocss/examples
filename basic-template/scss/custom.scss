@@ -1,0 +1,25 @@
+/**
+ * Custom theme
+ */
+
+@import "custom/colors";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@800&display=swap");
+
+:root {
+  --text-font:      'Open Sans', sans-serif;
+  --titles-font:    'Raleway', sans-serif;
+  --text-weight:    400;
+  --titles-weight:  800;
+  --buttons-weight: 600;
+  --h1-size:        2.5rem;
+  --h2-size:        2rem;
+  --h3-size:        1.75rem;
+  --h4-size:        1.5rem;
+  --h5-size:        1.25rem;
+  --block-round:    0;
+  --form-element-spacing-vertical:   1rem;
+  --form-element-spacing-horizontal: 1.25rem;
+}
+
+@import "custom/light";
+@import "custom/dark";
