@@ -10,7 +10,7 @@
     <link rel="canonical" href="https://picocss.com/examples/company/">
 
     <!-- Pico.css -->
-    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <link rel="stylesheet" href="../_includes/lib/pico/css/pico.css">
 
     <!-- Custom styles for this example -->
     <link rel="stylesheet" href="custom.css">
@@ -18,10 +18,11 @@
 
   <body>
 
+    <!-- Hero -->
     <div class="hero" data-theme="dark">
       <nav class="container-fluid">
         <ul>
-          <li><a href="./" class="contrast"><strong>Brand</strong></a></li>
+          <li><a href="./" class="contrast" onclick="event.preventDefault()"><strong>Brand</strong></a></li>
         </ul>
         <ul>
           <li><a href="#" class="contrast" data-theme-switcher="auto">Auto</a></li>
@@ -34,10 +35,11 @@
           <h1>Company</h1>
           <h2>A classic company or blog layout with a sidebar</h2>
         </hgroup>
-        <p><a href="#" role="button">Call to action</a></p>
+        <p><a href="#" role="button" onclick="event.preventDefault()">Call to action</a></p>
       </header>
-    </div>
+    </div><!-- ./ Hero -->
 
+    <!-- Main -->
     <main class="container">
       <div class="grid">
 
@@ -58,26 +60,27 @@
         </section>
 
         <aside>
-          <a href="#" aria-label="Example"><img src="https://source.unsplash.com/T5nXYXCf50I/1500x750" alt="Architecture"></a>
+          <a href="#" aria-label="Example" onclick="event.preventDefault()"><img src="https://source.unsplash.com/T5nXYXCf50I/1500x750" alt="Architecture"></a>
           <p>
-            <a href="#" class="contrast">Donec sit amet</a><br>
+            <a href="#" onclick="event.preventDefault()">Donec sit amet</a><br>
             <small>Class aptent taciti sociosqu ad litora torquent per conubia nostra</small>
           </p>
-          <a href="#" aria-label="Example"><img src="https://source.unsplash.com/tb4heMa-ZRo/1500x750" alt="Architecture"></a>
+          <a href="#" aria-label="Example" onclick="event.preventDefault()"><img src="https://source.unsplash.com/tb4heMa-ZRo/1500x750" alt="Architecture"></a>
           <p>
-            <a href="#" class="contrast">Suspendisse potenti</a><br>
+            <a href="#">Suspendisse potenti</a><br>
             <small>Proin non condimentum tortor. Donec in feugiat sapien.</small>
           </p>
-          <a href="#" aria-label="Example"><img src="https://source.unsplash.com/Ru3Ap8TNcsk/1500x750" alt="Architecture"></a>
+          <a href="#" aria-label="Example" onclick="event.preventDefault()"><img src="https://source.unsplash.com/Ru3Ap8TNcsk/1500x750" alt="Architecture"></a>
           <p>
-            <a href="#" class="contrast">Nullam lobortis placerat aliquam</a><br>
+            <a href="#" onclick="event.preventDefault()">Nullam lobortis placerat aliquam</a><br>
             <small>Maecenas vitae nibh blandit dolor commodo egestas vel eget neque. Praesent semper justo orci, vel imperdiet mi auctor in.</small>
           </p>
         </aside>
 
       </div>
-    </main>
+    </main><!-- ./ Main -->
 
+    <!-- Subscribe -->
     <section aria-label="Subscribe example">
       <div class="container">
         <article>
@@ -88,15 +91,16 @@
             <form class="grid">
               <input type="text" id="firstname" name="firstname" placeholder="First name" aria-label="First name" required>
               <input type="email" id="email" name="email" placeholder="Email address" aria-label="Email address" required>
-              <button type="submit">Subscribe</button>
+              <button type="submit" onclick="event.preventDefault()">Subscribe</button>
           </form>
         </article>
       </div>
-    </section>
+    </section><!-- ./ Subscribe -->
 
+    <!-- Footer -->
     <footer class="container">
-      <small>Built with <a href="https://picocss.com">Pico</a> • <a href="https://github.com/picocss/examples/tree/master/company">Source code</a></small>
-    </footer>
+      <small>Built with <a href="https://picocss.com">Pico</a> • <a href="https://github.com/picocss/examples/tree/master/company/">Source code</a></small>
+    </footer><!-- ./ Footer -->
 
     <!-- Minimal theme switcher -->
     <script src="../_includes/js/minimal-theme-switcher.js"></script>

@@ -1,13 +1,12 @@
-/* Commons tags */
+/* Global CSS variables */
 :root {
   --spacing: 3rem;
+  --text-weight: 400;
+  --titles-weight: 800;
+  --block-round: 0;
 }
-html, p {
-  font-weight: 300;
-}
-h1 {
-  font-weight: 800;
-}
+
+/* Typography */
 h2, h3, hgroup>:last-child {
   font-weight: 200;
 }
