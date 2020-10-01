@@ -1,0 +1,122 @@
+/**
+ * Docs: Documentation
+ */
+
+// Docs: Themes
+// ––––––––––––––––––––
+
+#themes {
+  button i {
+    font-style: normal;
+  }
+}
+
+// Docs: Customization
+// ––––––––––––––––––––
+
+#customization {
+
+  figure {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-bottom: 0;
+    overflow: hidden;
+
+    @media (min-width: map-get($breakpoints, "sm")) {
+      grid-template-columns: repeat(18, 1fr);
+      grid-template-rows: 1fr;
+      border-top-right-radius: var(--block-round);
+      border-top-left-radius: var(--block-round);
+    }
+
+    ~ article {
+      margin-top: 0;
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+    }
+
+  button {
+    margin-bottom: 0;
+    padding: 0;
+    padding-top: 100%;
+    border:none;
+    border-radius: 0;
+
+      &:focus {
+        box-shadow: none;
+      }
+
+      &.picked {
+        background-image: var(--icon-check);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: .66rem auto;
+        box-shadow: inset 0 0 1rem 0 rgba(0,0,0,0.25);
+      }
+      &[data-color="lime"],
+      &[data-color="yellow"],
+      &[data-color="amber"] {
+        &.picked {
+          background-image: var(--icon-check-dark);
+        }
+      }
+    }
+  }
+
+  h4 {
+    transition: color var(--transition);
+  }
+
+  pre[data-theme="generated"] {
+    border-color: var(--primary);
+  }
+}
+
+
+// Docs: Grids
+// ––––––––––––––––––––
+
+#grids {
+
+  button {
+    display: block;
+    width: 100%;
+    margin-bottom: calc(var(--spacing-typography) / 2);
+
+    @media (min-width: map-get($breakpoints, "sm")) {
+      display: inline-block;
+      width: auto;
+      margin-right: .5rem;
+    }
+
+    svg {
+      stroke: var(--secondary);
+      margin-right: .5rem;
+      border: 2px solid currentColor;
+      border-radius: 1rem;
+      background: currentColor;
+    }
+  }
+
+  .grid > * {
+    padding: calc(var(--spacing-gutter) / 2) 0;
+    background: var(--code-background);
+    text-align: center;
+  }
+
+  details {
+    margin-top: calc(var(--spacing-typography) * 2);
+
+    svg {
+      vertical-align: bottom;
+    }
+  }
+}
+
+// Docs: Forms
+// ––––––––––––––––––––
+
+#forms div.grid {
+  grid-row-gap: 0;
+}

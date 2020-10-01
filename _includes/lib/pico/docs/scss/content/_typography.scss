@@ -1,0 +1,20 @@
+/**
+ * Docs: Typography
+ */
+
+section > hgroup {
+  margin-bottom: calc(var(--spacing-typography) * 2);
+}
+
+a[role=button] {
+  margin-right: calc(var(--spacing-typography) / 4);
+  margin-bottom: var(--spacing-typography);
+}
+
+[role=document] {
+  section > h1,
+  section > h2,
+  section > h3 {
+    line-height: 1;
+  }
+}
