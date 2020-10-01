@@ -2,27 +2,27 @@
  * Custom Styles for Google Amp example
  */
 
+// CSS Variables
+:root {
+  --titles-font:  'Calistoga', serif;
+  --titles-weight: 400;
+}
+
 // Layout
 body {
-  padding-top: 1 + $spacing-gutter*2;
+  padding-top: calc(1rem + var(--spacing-gutter) * 2);
 }
 body > nav {
   background-color: var(--card-background);
   box-shadow: var(--card-shadow);
 }
 
-// Typography
-@font-face {
-  font-display: swap;
-  src: local('Calistoga Regular'), local('Calistoga-Regular'), url(https://fonts.gstatic.com/s/calistoga/v1/6NUU8F2OJg6MeR7l4e0fs8wB49dJfg.woff2) format('woff2');
-  font-family: 'Calistoga';
-  font-style: normal;
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+// Button
+button {
+  font-family: var(--titles-font);
 }
-h1, h2, h3, button {
-  font-family: 'Calistoga', serif;
-  font-weight: 400;
-}
+
+// Nav
 nav button,
 nav button:hover,
 nav button:active,
@@ -41,7 +41,7 @@ body > nav {
   top: 0;
   right: 0;
   left: 0;
-  padding: 0 $spacing-gutter;
+  padding: 0 var(--spacing-gutter);
 
   h1 {
     margin-bottom: 0;
@@ -64,8 +64,8 @@ amp-sidebar {
 
   button {
     position: absolute;
-    top: $spacing-gutter;
-    right: $spacing-gutter;
+    top: var(--spacing-gutter);
+    right: var(--spacing-gutter);
     width: 1.5rem;
     height: 1.5rem;
     border-radius: 2rem;
@@ -74,7 +74,7 @@ amp-sidebar {
 
   aside {
     min-width: 12rem;
-    margin-top: $spacing-typography;
+    margin-top: var(--spacing-typography);
   }
 
   h3,

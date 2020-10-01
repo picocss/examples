@@ -21,10 +21,12 @@
     <style amp-boilerplate="">body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
     <noscript><style amp-boilerplate="">body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 
-    <!-- Pico.css custom build for AMP inlined -->
+    <!-- Google font: Calistoga -->
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet">
+
+    <!-- Pico.css custom build inlined for Google AMP -->
     <style amp-custom>
     <?php
-    // https://stackoverflow.com/questions/11327591/php-str-replace-to-include-function-file-as-part-of-a-templating-system
     include("css/pico.google-amp.min.css");
     echo PHP_EOL;
     ?>
@@ -33,6 +35,7 @@
 
   <body>
 
+    <!-- Amp Sidebar -->
     <amp-sidebar id="sidebar-left" class="sample-sidebar" layout="nodisplay" side="left">
       <aside>
         <nav>
@@ -50,8 +53,9 @@
           </ul>
         </nav>
       </aside>
-    </amp-sidebar>
+    </amp-sidebar><!-- ./ Amp Sidebar -->
 
+    <!-- Nav -->
     <nav>
       <ul>
         <li>
@@ -76,8 +80,9 @@
           </a>
         </li>
       </ul>
-    </nav>
+    </nav><!-- ./ Nav -->
 
+    <!-- Main -->
     <main>
       <hgroup>
         <h1>Google Amp</h1>
@@ -95,16 +100,13 @@
         </amp-img>
         <figcaption>Image from <a href="https://unsplash.com">unsplash.com</a></figcaption>
       </figure>
-
       <p>
         <amp-social-share type="twitter" width="2rem" height="1.5rem" aria-label="Share on Titter"></amp-social-share>
         <amp-social-share type="facebook" width="2rem" height="1.5rem" aria-label="Share on Facebook"></amp-social-share>
         <amp-social-share type="pinterest" width="2rem" height="1.5rem" aria-label="Share on Pinterest"></amp-social-share>
       </p>
-
       <p>Integer vitae mi sed est rutrum feugiat. Ut bibendum sagittis dictum. Donec dictum pellentesque ipsum quis maximus. Fusce porttitor, arcu nec convallis rutrum, lectus justo auctor enim, vitae condimentum quam leo eu ante. Mauris nec augue in orci posuere imperdiet. Nam vel aliquet nisl. Vivamus iaculis ultrices nisl vitae ultrices. Aenean ac risus a tortor gravida dictum malesuada nec erat. Fusce sodales pharetra facilisis. Nunc viverra, eros quis imperdiet dapibus, mauris nunc venenatis lorem, ut pharetra magna lorem in mi.</p>
       <p>Vivamus malesuada fermentum urna, sit amet luctus urna ultrices id. In consequat orci a enim congue, et pellentesque mi ultrices. Pellentesque cursus sapien arcu, consectetur faucibus massa sollicitudin sed. Vivamus porttitor vehicula leo, id volutpat velit posuere vel. Pellentesque diam dui, faucibus quis mollis eget, consequat et est. Nullam vel tellus massa. Suspendisse in lorem ac lorem varius euismod. Cras consectetur suscipit tellus rutrum condimentum. Etiam in erat laoreet, congue nisi maximus, tristique lacus. Quisque et lorem ex.</p>
-
       <article>
         <h3>Subscribe</h3>
         <form action-xhr="./" method="post">
@@ -119,14 +121,13 @@
           <button type="submit">Subscribe</button>
         </form>
       </article>
+      <p>For this example, we have compiled a custom and class-less version of pico (<a href="https://github.com/picocss/examples/blob/master/google-amp/">Source code here</a>).</p>
+    </main><!-- ./ Main -->
 
-      <p>For this example, we have compiled a custom and class-less version of pico (<a href="https://github.com/picocss/examples/blob/master/google-amp/scss/pico.google-amp.scss">See here</a>).</p>
-
-    </main>
-
+    <!-- Footer -->
     <footer>
-      <small>Built with <a href="https://picocss.com">Pico</a> • <a href="https://github.com/picocss/examples/tree/master/google-amp">Source code</a></small>
-    </footer>
+      <small>Built with <a href="https://picocss.com">Pico</a> • <a href="https://github.com/picocss/examples/tree/master/google-amp/">Source code</a></small>
+    </footer><!-- ./ Footer -->
 
   </body>
 
