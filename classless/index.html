@@ -4,64 +4,232 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
     <title>Class-less example • Pico.css</title>
-    <meta name="description" content="Just a pure semantic HTML markup, without .classes. Built with Pico CSS.">
+    <meta name="description" content="Just a pure semantic HTML markup, without .classes.  Built with Pico CSS.">
     <link rel="shortcut icon" href="https://picocss.com/favicon.ico">
     <link rel="canonical" href="https://picocss.com/examples/classless/">
 
-     <!-- Pico.css (Classless version) -->
-    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.classless.min.css">
+     <!-- Pico.css -->
+    <link rel="stylesheet" href="../_includes/lib/pico/css/pico.classless.css">
   </head>
 
   <body>
 
+    <!-- Header -->
     <header>
       <hgroup>
-        <h1>Class-less</h1>
+        <h1>Class-less example</h1>
         <h2>Just a pure semantic HTML markup, without <code>.classes</code></h2>
       </hgroup>
       <nav>
         <ul>
-          <li>Theme:</li>
+          <li>Theme:</a></li>
           <li><a href="#" data-theme-switcher="auto">Auto</a></li>
           <li><a href="#" data-theme-switcher="light">Light</a></li>
           <li><a href="#" data-theme-switcher="dark">Dark</a></li>
         </ul>
       </nav>
-    </header>
+    </header><!-- ./ Header -->
 
+    <!-- Main -->
     <main>
 
-      <section>
-        <h2>Ut sit amet sem ut velit</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lobortis est vel velit bibendum ultrices. Sed aliquam tortor vel odio fermentum ullamcorper eu vitae neque. Sed non diam at tellus venenatis viverra. Vestibulum et leo laoreet arcu tempor eleifend venenatis ac leo. Pellentesque euismod justo sed nisl sollicitudin varius. Duis venenatis nisl sit amet ante rutrum posuere. Etiam nec ullamcorper leo, sed placerat mauris.</p>
-        <figure>
-          <img src="https://source.unsplash.com/a562ZEFKW8I/2000x1000" alt="Minimal landscape">
-          <figcaption>Image from <a href="https://unsplash.com">unsplash.com</a></figcaption>
-        </figure>
+      <!-- Preview -->
+      <section id="preview">
+        <h2>Preview</h2>
+        <p>Sed ultricies dolor non ante vulputate hendrerit. Vivamus sit amet suscipit sapien. Nulla iaculis eros a elit pharetra egestas.</p>
+        <form>
+          <input type="text" name="firstname" placeholder="First name" aria-label="First name" required>
+          <input type="email" name="email" placeholder="Email address" aria-label="Email address" required>
+          <fieldset>
+            <label for="terms">
+              <input type="checkbox" role="switch" id="terms" name="terms" aria-checked="false">
+              I agree to the <a href="#">Privacy Policy</a>
+            </label>
+          </fieldset>
+          <button type="submit">Subscribe</button>
+        </form>
+      </section><!-- ./ Preview -->
+
+      <!-- Typography-->
+      <section id="typography">
+        <h2>Typography</h2>
+        <p>Aliquam lobortis vitae nibh nec rhoncus. Morbi mattis neque eget efficitur feugiat. Vivamus porta nunc a erat mattis, mattis feugiat turpis pretium. Quisque sed tristique felis.</p>
+
+        <!-- Blockquote-->
         <blockquote>
-          "Blockquote example: Maecenas vehicula metus tellus, vitae congue turpis hendrerit non. Nam at dui sit amet ipsum cursus ornare."
+          "Maecenas vehicula metus tellus, vitae congue turpis hendrerit non. Nam at dui sit amet ipsum cursus ornare."
           <footer>
             <cite>- Phasellus eget lacinia</cite>
           </footer>
         </blockquote>
-      </section>
 
-      <article>
-        <h3>Article example</h3>
-        <p>Nullam dui arcu, malesuada et sodales eu, efficitur vitae dolor. Sed ultricies dolor non ante vulputate hendrerit. Vivamus sit amet suscipit sapien. Nulla iaculis eros a elit pharetra egestas. Nunc placerat facilisis cursus. Sed vestibulum metus eget dolor pharetra rutrum. Sed facilisis, orci sit amet cursus egestas, tellus erat imperdiet mi, in cursus tellus odio ut ex.</p>
+        <!-- Lists-->
+        <h3>Lists</h3>
         <ul>
-          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-          <li>Nulla pellentesque elit nec velit convallis, sit amet accumsan odio pulvinar.</li>
-          <li>Aliquam venenatis massa a ornare ullamcorper.</li>
-          <li>Etiam tincidunt leo convallis, tempus dolor et, euismod ipsum.</li>
-          <li>Duis sollicitudin lorem a nibh condimentum, at feugiat mauris consequat.</li>
+          <li>Aliquam lobortis lacus eu libero ornare facilisis.</li>
+          <li>Nam et magna at libero scelerisque egestas.</li>
+          <li>Suspendisse id nisl ut leo finibus vehicula quis eu ex.</li>
+          <li>Proin ultricies turpis et volutpat vehicula.</li>
         </ul>
-      </article>
 
-      <section aria-label="Responsive table example">
-        <p>Responsive table example</p>
+        <!-- Inline text elements-->
+        <h3>Inline text elements</h3>
         <figure>
           <table>
+            <tbody>
+              <tr>
+                <td><a href="#" onclick="event.preventDefault()">Link</a></td>
+                <td><strong>Bold</strong></td>
+                <td><em>Italic</em></td>
+              </tr>
+              <tr>
+                <td><u>Underline</u></td>
+                <td><del>Deleted</del></td>
+                <td><ins>Inserted</ins></td>
+              </tr>
+              <tr>
+                <td><s>Strikethrough</s></td>
+                <td><small>Small </small></td>
+                <td><abbr title="Abbreviation" data-tooltip="Abbreviation">Abbr.</abbr></td>
+              </tr>
+              <tr>
+                <td>Text <sub>Sub</sub></td>
+                <td>Text <sup>Sup</sup></td>
+                <td><kbd>Kbd</kbd></td>
+              </tr>
+              <tr>
+                <td><mark>Highlighted</mark></td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+            </tbody>
+          </table>
+        </figure>
+
+        <!-- Headings-->
+        <h3>Heading 3</h3>
+        <p>Integer bibendum malesuada libero vel eleifend. Fusce iaculis turpis ipsum, at efficitur sem scelerisque vel. Aliquam auctor diam ut purus cursus fringilla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+        <h4>Heading 4</h4>
+        <p>Cras fermentum velit vitae auctor aliquet. Nunc non congue urna, at blandit nibh. Donec ac fermentum felis. Vivamus tincidunt arcu ut lacus hendrerit, eget mattis dui finibus.</p>
+        <h5>Heading 5</h5>
+        <p>Donec nec egestas nulla. Sed varius placerat felis eu suscipit. Mauris maximus ante in consequat luctus. Morbi euismod sagittis efficitur. Aenean non eros orci. Vivamus ut diam sem.</p>
+        <h6>Heading 6</h6>
+        <p>Ut sed quam non mauris placerat consequat vitae id risus. Vestibulum tincidunt nulla ut tortor posuere, vitae malesuada tortor molestie. Sed nec interdum dolor. Vestibulum id auctor nisi, a efficitur sem. Aliquam sollicitudin efficitur turpis, sollicitudin hendrerit ligula semper id. Nunc risus felis, egestas eu tristique eget, convallis in velit.</p>
+
+        <!-- Medias-->
+        <figure>
+          <img src="https://source.unsplash.com/a562ZEFKW8I/2000x1000" alt="Minimal landscape">
+          <figcaption>Image from <a href="https://unsplash.com">unsplash.com</a></figcaption>
+        </figure>
+      </section><!-- ./ Typography-->
+
+      <!-- Button-->
+      <section id="button">
+        <h2>Button</h2>
+        <button>Primary</button>
+      </section><!-- ./ Button -->
+
+      <!-- Form elements-->
+      <section id="form">
+        <form>
+          <h2>Form elements</h2>
+
+          <!-- Search -->
+          <label for="search">Search</label>
+          <input type="search" id="search" name="search" placeholder="Search">
+
+          <!-- Text -->
+          <label for="text">Text</label>
+          <input type="text" id="text" name="text" placeholder="Text">
+          <small>Curabitur consequat lacus at lacus porta finibus.</small>
+
+          <!-- Select -->
+          <label for="select">Select</label>
+          <select id="select" name="select">
+            <option selected>Choose...</option>
+            <option>...</option>
+          </select>
+
+          <!-- File browser -->
+          <label for="file">File browser
+            <input type="file" id="file" name="file">
+          </label>
+
+          <!-- Range slider control -->
+          <label for="range">Range slider
+            <input type="range" min="0" max="100" value="50" id="range" name="range">
+          </label>
+
+          <!-- Date-->
+          <label for="date">Date
+            <input type="date" id="date" name="date">
+          </label>
+
+          <!-- Time-->
+          <label for="time">Time
+            <input type="time" id="time" name="time">
+          </label>
+
+          <!-- Color-->
+          <label for="color">Color
+            <input type="color" id="color" name="color" value="#0eaaaa">
+          </label>
+
+          <!-- Checkboxes -->
+          <fieldset>
+            <legend><strong>Checkboxes</strong></legend>
+            <label for="checkbox-1">
+              <input type="checkbox" id="checkbox-1" name="checkbox-1" checked>
+              Checkbox
+            </label>
+            <label for="checkbox-2">
+              <input type="checkbox" id="checkbox-2" name="checkbox-2">
+              Checkbox
+            </label>
+            <label for="checkbox-3">
+              <input type="checkbox" id="checkbox-3" name="checkbox-3">
+              Checkbox
+            </label>
+          </fieldset>
+
+          <!-- Radio buttons -->
+          <fieldset>
+            <legend><strong>Radio buttons</strong></legend>
+            <label for="radio-1">
+              <input type="radio" id="radio-1" name="radio" value="radio-1" checked>
+              Radio button
+            </label>
+            <label for="radio-2">
+              <input type="radio" id="radio-2" name="radio" value="radio-2">
+              Radio button
+            </label>
+          </fieldset>
+
+          <!-- Switch -->
+          <fieldset>
+            <legend><strong>Switches</strong></legend>
+            <label for="switch-1">
+              <input type="checkbox" id="switch-1" name="switch-1" role="switch" aria-checked="true" checked>
+              Switch
+            </label>
+            <label for="switch-2">
+              <input type="checkbox" id="switch-2" name="switch-2" role="switch" aria-checked="false">
+              Switch
+            </label>
+          </fieldset>
+
+          <!-- Buttons -->
+          <input type="reset" value="Reset" onclick="event.preventDefault()">
+          <input type="submit" value="Submit" onclick="event.preventDefault()">
+
+        </form>
+      </section><!-- ./ Form elements-->
+
+      <!-- Tables -->
+      <section id="tables">
+        <h2>Tables</h2>
+        <figure>
+          <table role="grid">
             <thead>
               <tr>
                 <th scope="col">#</th>
@@ -108,63 +276,17 @@
             </tbody>
           </table>
         </figure>
-      </section>
+      </section><!-- ./ Tables -->
 
-      <section>
-        <h3>Form elements</h3>
-        <form>
-          <label for="firstname">
-            First name
-            <input type="text" id="firstname" name="firstname" placeholder="First name" required>
-          </label>
-          <label for="email">
-            First name
-            <input type="email" id="email" name="email" placeholder="Email address" required>
-          </label>
-          <label for="country">Country</label>
-          <select id="country">
-            <option selected>Choose...</option>
-            <option>...</option>
-          </select>
-          <fieldset>
-            <legend>Gender</legend>
-            <label for="male">
-              <input type="radio" id="male" name="gender" value="male" checked>
-              Male
-            </label>
-            <label for="female">
-              <input type="radio" id="female" name="gender" value="female">
-              Female
-            </label>
-            <label for="other">
-              <input type="radio" id="other" name="gender" value="other">
-              Other
-            </label>
-          </fieldset>
-          <fieldset>
-            <label for="terms">
-              <input type="checkbox" id="terms" name="terms">
-              I agree to the Terms and Conditions
-            </label>
-          </fieldset>
-          <fieldset>
-            <label for="switch">
-              <input type="checkbox" id="switch" name="switch" role="switch" aria-checked="false">
-              Publish on my profile
-            </label>
-          </fieldset>
-          <button type="submit">Submit</button>
-        </form>
-      </section>
-
-      <section>
-        <h3>Collapsible elements</h3>
-        <details open>
-          <summary>Nullam lobortis dui at sapien sodales</summary>
+      <!-- Accordions -->
+      <section id="accordions">
+        <h2>Accordions</h2>
+        <details>
+          <summary>Collapsible elements 1</summary>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque urna diam, tincidunt nec porta sed, auctor id velit. Etiam venenatis nisl ut orci consequat, vitae tempus quam commodo. Nulla non mauris ipsum. Aliquam eu posuere orci. Nulla convallis lectus rutrum quam hendrerit, in facilisis elit sollicitudin. Mauris pulvinar pulvinar mi, dictum tristique elit auctor quis. Maecenas ac ipsum ultrices, porta turpis sit amet, congue turpis.</p>
         </details>
-        <details>
-          <summary>Cras finibus nisl sapien</summary>
+        <details open>
+          <summary>Collapsible elements 2</summary>
           <ul>
             <li>Vestibulum id elit quis massa interdum sodales.</li>
             <li>Nunc quis eros vel odio pretium tincidunt nec quis neque.</li>
@@ -172,25 +294,35 @@
             <li>Cras sed libero aliquet, porta dolor quis, dapibus ipsum.</li>
           </ul>
         </details>
-      </section>
+      </section><!-- ./ Accordions -->
 
-      <section aria-label="Code example">
-        <p>Code example:</p>
+      <!-- Article-->
+      <article id="article">
+        <h2>Article</h2>
+        <p>Nullam dui arcu, malesuada et sodales eu, efficitur vitae dolor. Sed ultricies dolor non ante vulputate hendrerit. Vivamus sit amet suscipit sapien. Nulla iaculis eros a elit pharetra egestas. Nunc placerat facilisis cursus. Sed vestibulum metus eget dolor pharetra rutrum.</p>
+      </article><!-- ./ Article-->
 
-<pre><code><b>html</b> {
-  <i>font-size</i>: <u>16px</u>;
-}</code></pre>
+      <!-- Progress -->
+      <section id="progress">
+        <h2>Progress bar</h2>
+        <progress id="progress-1" value="25" max="100"></progress>
+        <progress id="progress-2" max="100" indeterminate="true"></progress>
+      </section><!-- ./ Progress -->
 
-      </section>
+    </main><!-- ./ Main -->
 
-    </main>
-
+    <!-- Footer -->
     <footer>
       <small>Built with <a href="https://picocss.com">Pico</a> • <a href="https://github.com/picocss/examples/blob/master/classless/index.html">Source code</a></small>
-    </footer>
+    </footer><!-- ./ Footer -->
 
     <!-- Minimal theme switcher -->
     <script src="../_includes/js/minimal-theme-switcher.js"></script>
+
+    <script>
+    // Set indeterminate checkbox
+    document.getElementById('checkbox-2').indeterminate = true;
+    </script>
 
   </body>
 
