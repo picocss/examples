@@ -10,7 +10,7 @@
     <link rel="canonical" href="https://picocss.com/examples/sign-in/">
 
      <!-- Pico.css -->
-    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <link rel="stylesheet" href="../_includes/lib/pico/css/pico.css">
 
     <!-- Custom styles for this example -->
     <link rel="stylesheet" href="custom.css">
@@ -21,17 +21,19 @@
 
   <body>
 
+    <!-- Nav -->
     <nav class="container-fluid">
       <ul>
-        <li><a href="./" class="contrast"><strong>Brand</strong></a></li>
+        <li><a href="./" class="contrast" onclick="event.preventDefault()"><strong>Brand</strong></a></li>
       </ul>
       <ul>
         <li><a href="#" class="contrast" data-theme-switcher="auto">Auto</a></li>
         <li><a href="#" class="contrast" data-theme-switcher="light">Light</a></li>
         <li><a href="#" class="contrast" data-theme-switcher="dark">Dark</a></li>
       </ul>
-    </nav>
+    </nav><!-- ./ Nav -->
 
+    <!-- Main -->
     <main class="container">
       <article class="grid">
         <div>
@@ -48,16 +50,17 @@
                 Remember me
               </label>
             </fieldset>
-            <button type="submit" class="contrast">Login</button>
+            <button type="submit" class="contrast" onclick="event.preventDefault()">Login</button>
           </form>
         </div>
         <div></div>
       </article>
-    </main>
+    </main><!-- ./ Main -->
 
+    <!-- Footer -->
     <footer class="container-fluid">
-      <small>Built with <a href="https://picocss.com">Pico</a> • <a href="https://github.com/picocss/examples/tree/master/sign-in">Source code</a></small>
-    </footer>
+      <small>Built with <a href="https://picocss.com" class="secondary">Pico</a> • <a href="https://github.com/picocss/examples/tree/master/sign-in/" class="secondary">Source code</a></small>
+    </footer><!-- ./ Footer -->
 
     <!-- Minimal theme switcher -->
     <script src="../_includes/js/minimal-theme-switcher.js"></script>
