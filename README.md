@@ -6,7 +6,6 @@
 
 Minimalist templates to discover Pico in action:
 
-
 - **[Preview](https://picocss.com/examples/preview/)**  
   A starter example with all elements and components used in Pico
 
