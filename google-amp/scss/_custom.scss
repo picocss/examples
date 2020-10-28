@@ -12,6 +12,7 @@
 body {
   padding-top: calc(1rem + var(--spacing-gutter) * 2);
 }
+
 body > nav {
   background-color: var(--card-background);
   box-shadow: var(--card-shadow);
@@ -83,5 +84,13 @@ amp-sidebar {
   a:active,
   a:focus {
     color: var(--primary-inverse);
+  }
+}
+
+// Icons
+amp-sidebar,
+body > nav {
+  svg {
+    height: 1rem;
   }
 }

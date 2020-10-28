@@ -1995,3 +1995,8 @@ amp-sidebar a:active,
 amp-sidebar a:focus {
   color: var(--primary-inverse);
 }
+
+amp-sidebar svg,
+body > nav svg {
+  height: 1rem;
+}
