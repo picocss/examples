@@ -1,20 +1,35 @@
-// Pico.css v1.0.6 (https://picocss.com)
+// Pico.css (https://picocss.com)
 // --------------------
 @import "../../_includes/lib/pico/scss/pico";
 
 
 /*!
- * Bootstrap Grid v4.5.2 (https://getbootstrap.com/)
- * Copyright 2011-2020 The Bootstrap Authors
- * Copyright 2011-2020 Twitter, Inc.
+ * Bootstrap Grid v5.0.2 (https://getbootstrap.com/)
+ * Copyright 2011-2021 The Bootstrap Authors
+ * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
-@import "../../_includes/lib/bootstrap/scss/functions";
-@import "../../_includes/lib/bootstrap/scss/variables";
-@import "../../_includes/lib/bootstrap/scss/mixins/breakpoints";
-@import "../../_includes/lib/bootstrap/scss/mixins/grid-framework";
-@import "../../_includes/lib/bootstrap/scss/mixins/grid";
-@import "../../_includes/lib/bootstrap/scss/grid";
-@import "../../_includes/lib/bootstrap/scss/utilities/display";
-@import "../../_includes/lib/bootstrap/scss/utilities/flex";
+ $include-column-box-sizing: true;
+
+ $grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+);
+
+ @import "../../_includes/lib/bootstrap/scss/functions";
+ @import "../../_includes/lib/bootstrap/scss/variables";
+
+ @import "../../_includes/lib/bootstrap/scss/mixins/lists";
+ @import "../../_includes/lib/bootstrap/scss/mixins/breakpoints";
+ // @import "../../_includes/lib/bootstrap/scss/mixins/container";
+ @import "../../_includes/lib/bootstrap/scss/mixins/grid";
+ @import "../../_includes/lib/bootstrap/scss/mixins/utilities";
+
+ @import "../../_includes/lib/bootstrap/scss/vendor/rfs";
+
+ // @import "../../_includes/lib/bootstrap/scss/containers";
+ @import "../../_includes/lib/bootstrap/scss/grid";

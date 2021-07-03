@@ -3,24 +3,34 @@
  */
 
 // CSS Variables
-:root {
-  --titles-font:  'Calistoga', serif;
-  --titles-weight: 400;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  --font-family: 'Calistoga', serif;
+  --font-weight: 400;
 }
 
 // Layout
 body {
-  padding-top: calc(1rem + var(--spacing-gutter) * 2);
+  padding-top: calc(1rem + var(--spacing) * 2);
 }
 
 body > nav {
-  background-color: var(--card-background);
-  box-shadow: var(--card-shadow);
+  background-color: var(--card-background-color);
+  box-shadow: var(--card-box-shadow);
 }
 
 // Button
-button {
-  font-family: var(--titles-font);
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+a[role="button"] {
+  font-family: 'Calistoga', serif;
+  --font-weight: 400;
 }
 
 // Nav
@@ -42,7 +52,7 @@ body > nav {
   top: 0;
   right: 0;
   left: 0;
-  padding: 0 var(--spacing-gutter);
+  padding: 0 var(--spacing);
 
   h1 {
     margin-bottom: 0;
@@ -61,12 +71,12 @@ amp-sidebar {
   position: relative;
   padding: 1rem;
   background-color: var(--primary);
-  box-shadow: var(--card-shadow);
+  box-shadow: var(--card-box-shadow);
 
   button {
     position: absolute;
-    top: var(--spacing-gutter);
-    right: var(--spacing-gutter);
+    top: var(--spacing);
+    right: var(--spacing);
     width: 1.5rem;
     height: 1.5rem;
     border-radius: 2rem;
@@ -75,7 +85,7 @@ amp-sidebar {
 
   aside {
     min-width: 12rem;
-    margin-top: var(--spacing-typography);
+    margin-top: var(--typography-spacing-vertical);
   }
 
   h3,

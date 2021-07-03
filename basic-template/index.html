@@ -3,13 +3,13 @@
 
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Basic template • Pico.css</title>
     <meta name="description" content="A basic custom template for Pico using only CSS custom properties (variables). Built with Pico CSS.">
     <link rel="shortcut icon" href="https://picocss.com/favicon.ico">
     <link rel="canonical" href="https://picocss.com/examples/basic-template/">
 
-     <!-- Pico.css -->
+    <!-- Pico.css -->
     <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
 
     <!-- Custom template-->
@@ -50,7 +50,7 @@
           <fieldset>
             <label for="terms">
               <input type="checkbox" role="switch" id="terms" name="terms" aria-checked="false">
-              I agree to the <a href="#">Privacy Policy</a>
+              I agree to the <a href="#" onclick="event.preventDefault()">Privacy Policy</a>
             </label>
           </fieldset>
         </form>
@@ -154,8 +154,8 @@
 
           <!-- Select -->
           <label for="select">Select</label>
-          <select id="select" name="select">
-            <option selected>Choose...</option>
+          <select id="select" name="select" required>
+            <option value="" selected>Select...</option>
             <option>...</option>
           </select>
 
@@ -215,10 +215,6 @@
               </label>
               <label for="checkbox-2">
                 <input type="checkbox" id="checkbox-2" name="checkbox-2">
-                Checkbox
-              </label>
-              <label for="checkbox-3">
-                <input type="checkbox" id="checkbox-3" name="checkbox-3">
                 Checkbox
               </label>
             </fieldset>
@@ -333,6 +329,7 @@
       <article id="article">
         <h2>Article</h2>
         <p>Nullam dui arcu, malesuada et sodales eu, efficitur vitae dolor. Sed ultricies dolor non ante vulputate hendrerit. Vivamus sit amet suscipit sapien. Nulla iaculis eros a elit pharetra egestas. Nunc placerat facilisis cursus. Sed vestibulum metus eget dolor pharetra rutrum.</p>
+        <footer><small>Duis nec elit placerat, suscipit nibh quis, finibus neque.</small></footer>
       </article><!-- ./ Article-->
 
       <!-- Progress -->
@@ -353,9 +350,6 @@
     <script src="../_includes/js/minimal-theme-switcher.js"></script>
 
     <script>
-    // Set indeterminate checkbox
-    document.getElementById('checkbox-2').indeterminate = true;
-
     // Set indeterminate progress bar
     document.getElementById('progress-2').indeterminate = true;
     </script>

@@ -1,17 +1,17 @@
 /* Global CSS variables */
 :root {
-  --spacing: 3rem;
-  --text-weight: 400;
-  --titles-weight: 800;
-  --block-round: 0;
+  --spacing-company: 3rem;
+  --font-weight: 400;
+  --border-radius: 0;
 }
 
 /* Typography */
-h2, h3, hgroup>:last-child {
+h2, h3, hgroup > :last-child {
   font-weight: 200;
 }
+
 small {
-  color: var(--muted-text);
+  color: var(--muted-color);
 }
 
 /* Header */
@@ -21,29 +21,27 @@ small {
   background-position: center;
   background-size: cover;
 }
+
 header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: var(--spacing) 0;
+  padding: var(--spacing-company) 0;
 }
-header hgroup>:last-child {
-  color: var(--h3);
+
+header hgroup > :last-child {
+  color: var(--h3-color);
 }
+
 header hgroup {
-  margin-bottom: var(--spacing);
+  margin-bottom: var(--spacing-company);
 }
 
 /* Main */
-main .grid > * {
-  margin-bottom: var(--spacing);
-}
 @media (min-width: 992px) {
   main .grid {
-    grid-column-gap: var(--spacing);
+    grid-column-gap: var(--spacing-company);
     grid-template-columns: auto 25%;
   }
 }
+
 form.grid {
   grid-row-gap: 0;
 }
@@ -52,7 +50,8 @@ form.grid {
 aside img {
   margin-bottom: .25rem;
 }
+
 aside p {
-  margin-bottom: var(--spacing);
+  margin-bottom: var(--spacing-company);
   line-height: 1.25;
 }

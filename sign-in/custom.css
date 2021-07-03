@@ -6,45 +6,55 @@ body > main {
   min-height: calc(100vh - 7rem);
   padding: 1rem 0;
 }
+
 article {
   padding: 0;
   overflow: hidden;
 }
+
 article div {
   padding: 1rem;
 }
 
 @media (min-width: 576px) {
+
   body > main {
     padding: 1.25rem 0;
   }
+
   article div {
     padding: 1.25rem;
   }
 }
 
 @media (min-width: 768px) {
+
   body > main {
     padding: 1.5rem 0;
   }
+
   article div {
     padding: 1.5rem;
   }
 }
 
 @media (min-width: 992px) {
+
   body > main {
     padding: 1.75rem 0;
   }
+
   article div {
     padding: 1.75rem;
   }
 }
 
 @media (min-width: 1200px) {
+
   body > main {
     padding: 2rem 0;
   }
+
   article div {
     padding: 2rem;
   }
@@ -58,6 +68,7 @@ article div:nth-of-type(2) {
   background-position: center;
   background-size: cover;
 }
+
 @media (min-width: 992px) {
   .grid > div:nth-of-type(2) {
     display: block;

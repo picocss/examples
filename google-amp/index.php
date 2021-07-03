@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Google Amp example • Pico.css</title>
     <meta name="description" content="A simple layout for Google Amp, with inlined CSS, Fixed nav, Sidebar and Social Share.  Built with Pico CSS.">
     <link rel="shortcut icon" href="https://picocss.com/favicon.ico">

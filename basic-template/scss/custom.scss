@@ -2,24 +2,75 @@
  * Custom theme
  */
 
+// Imports
 @import "custom/colors";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@800&display=swap");
 
 :root {
-  --text-font:      'Open Sans', sans-serif;
-  --titles-font:    'Raleway', sans-serif;
-  --text-weight:    400;
-  --titles-weight:  800;
-  --buttons-weight: 600;
-  --h1-size:        2.5rem;
-  --h2-size:        2rem;
-  --h3-size:        1.75rem;
-  --h4-size:        1.5rem;
-  --h5-size:        1.25rem;
-  --block-round:    0;
-  --form-element-spacing-vertical:   1rem;
+  --font-family: 'Open Sans', sans-serif;
+  --border-radius: 0;
+  --form-element-spacing-vertical: 1rem;
   --form-element-spacing-horizontal: 1.25rem;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  --font-family: 'Raleway', sans-serif;
+  --font-weight: 800;
+}
+
+h1 {
+  --font-size: 2.5rem;
+  --typography-spacing-vertical: 2.5rem;
+}
+
+h2 {
+  --font-size: 2rem;
+  --typography-spacing-vertical: 2rem;
+}
+
+h3 {
+  --font-size: 1.75rem;
+  --typography-spacing-vertical: 1.75rem;
+}
+
+h4 {
+  --font-size: 1.5rem;
+  --typography-spacing-vertical: 1.5rem;
+}
+
+h5 {
+  --font-size: 1.25rem;
+  --typography-spacing-vertical: 1.25rem;
+}
+
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+a[role="button"] {
+  --font-weight: 600;
+}
+
+// Light theme (Default)
+// Can be forced with data-theme="light"
 @import "custom/light";
+
+// Dark theme (Auto)
+// Automatically enabled if user has Dark mode enabled
 @import "custom/dark";
+@media only screen and (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    @include dark;
+  }
+}
+
+// Dark theme (Forced)
+// Enabled if forced with data-theme="dark"
+[data-theme="dark"] {
+  @include dark;
+}
