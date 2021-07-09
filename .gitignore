@@ -1,7 +1,7 @@
 *.DS_Store
-prepros-6.config
+prepros.config
 
-_includes/lib/pico/.git/
-_includes/lib/pico/.gitignore
-_includes/lib/pico/test.html
-_includes/lib/pico/TODO.md
+lib/pico/.git/
+lib/pico/.gitignore
+lib/pico/test.html
+lib/pico/TODO.md

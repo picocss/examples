@@ -1,6 +1,6 @@
 // Pico.css (https://picocss.com)
 // --------------------
-@import "../../_includes/lib/pico/scss/pico";
+@import "../../lib/pico/scss/pico";
 
 
 /*!
@@ -20,16 +20,11 @@
   xl: 1200px,
 );
 
- @import "../../_includes/lib/bootstrap/scss/functions";
- @import "../../_includes/lib/bootstrap/scss/variables";
-
- @import "../../_includes/lib/bootstrap/scss/mixins/lists";
- @import "../../_includes/lib/bootstrap/scss/mixins/breakpoints";
- // @import "../../_includes/lib/bootstrap/scss/mixins/container";
- @import "../../_includes/lib/bootstrap/scss/mixins/grid";
- @import "../../_includes/lib/bootstrap/scss/mixins/utilities";
-
- @import "../../_includes/lib/bootstrap/scss/vendor/rfs";
-
- // @import "../../_includes/lib/bootstrap/scss/containers";
- @import "../../_includes/lib/bootstrap/scss/grid";
+ @import "../../lib/bootstrap/scss/functions";
+ @import "../../lib/bootstrap/scss/variables";
+ @import "../../lib/bootstrap/scss/mixins/lists";
+ @import "../../lib/bootstrap/scss/mixins/breakpoints";
+ @import "../../lib/bootstrap/scss/mixins/grid";
+ @import "../../lib/bootstrap/scss/mixins/utilities";
+ @import "../../lib/bootstrap/scss/vendor/rfs";
+ @import "../../lib/bootstrap/scss/grid";
