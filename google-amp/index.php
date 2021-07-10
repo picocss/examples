@@ -114,7 +114,7 @@
           <input type="email" name="email" placeholder="Email address" aria-label="Email address" required>
           <fieldset>
             <label for="terms">
-              <input type="checkbox" role="switch" id="terms" name="terms" aria-checked="false">
+              <input type="checkbox" role="switch" id="terms" name="terms">
               I agree to the <a href="#">Privacy Policy</a>
             </label>
           </fieldset>
