@@ -164,19 +164,19 @@
           <!-- Valid -->
           <label for="valid">
             Valid
-            <input type="text" id="valid" name="valid" placeholder="Valid" aria-label="Valid" aria-invalid="false">
+            <input type="text" id="valid" name="valid" placeholder="Valid" aria-invalid="false">
           </label>
 
           <!-- Invalid -->
           <label for="invalid">
             Invalid
-            <input type="text" id="invalid" name="invalid" placeholder="Invalid" aria-label="Invalid" aria-invalid="true">
+            <input type="text" id="invalid" name="invalid" placeholder="Invalid" aria-invalid="true">
           </label>
 
           <!-- Disabled -->
           <label for="disabled">
             Disabled
-            <input type="text" id="disabled" name="disabled" placeholder="Disabled" aria-label="Disabled" disabled>
+            <input type="text" id="disabled" name="disabled" placeholder="Disabled" disabled>
           </label>
 
           <!-- Date-->
@@ -324,6 +324,13 @@
         <progress id="progress-1" value="25" max="100"></progress>
         <progress id="progress-2"></progress>
       </section><!-- ./ Progress -->
+
+      <!-- Loading -->
+      <section id="loading">
+        <h2>Loading</h2>
+        <article aria-busy="true"></article>
+        <button aria-busy="true">Please wait...</button>
+      </section><!-- ./ Loading -->
 
     </main><!-- ./ Main -->
 
