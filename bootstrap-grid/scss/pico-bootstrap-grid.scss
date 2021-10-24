@@ -1,10 +1,10 @@
 // Pico.css (https://picocss.com)
 // --------------------
-@import "../../lib/pico/scss/pico";
+@import "../../node_modules/@picocss/pico/scss/pico";
 
 
 /*!
- * Bootstrap Grid v5.0.2 (https://getbootstrap.com/)
+ * Bootstrap Grid 5.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
@@ -20,11 +20,11 @@
   xl: 1200px,
 );
 
- @import "../../lib/bootstrap/scss/functions";
- @import "../../lib/bootstrap/scss/variables";
- @import "../../lib/bootstrap/scss/mixins/lists";
- @import "../../lib/bootstrap/scss/mixins/breakpoints";
- @import "../../lib/bootstrap/scss/mixins/grid";
- @import "../../lib/bootstrap/scss/mixins/utilities";
- @import "../../lib/bootstrap/scss/vendor/rfs";
- @import "../../lib/bootstrap/scss/grid";
+ @import "../../node_modules/bootstrap/scss/functions";
+ @import "../../node_modules/bootstrap/scss/variables";
+ @import "../../node_modules/bootstrap/scss/mixins/lists";
+ @import "../../node_modules/bootstrap/scss/mixins/breakpoints";
+ @import "../../node_modules/bootstrap/scss/mixins/grid";
+ @import "../../node_modules/bootstrap/scss/mixins/utilities";
+ @import "../../node_modules/bootstrap/scss/vendor/rfs";
+ @import "../../node_modules/bootstrap/scss/grid";
