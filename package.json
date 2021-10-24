@@ -18,7 +18,7 @@
     "css:compile:google-amp": "sass --style expanded --no-source-map --no-error-css google-amp/scss/:google-amp/css/",
     "css:prefix": "postcss bootstrap-grid/css/*.css basic-template/css/*.css google-amp/css/*.css !bootstrap-grid/css/*.min.css !basic-template/css/*.min.css !google-amp/css/*.min.css --use autoprefixer --no-map --replace",
     "css:minify": "cleancss -O1 --batch --batch-suffix '.min' bootstrap-grid/css/*.css basic-template/css/*.css google-amp/css/*.css !bootstrap-grid/css/*.min.css !basic-template/css/*.min.css !google-amp/css/*.min.css",
-    "build:css": "npm-run-all css:compile:bootstrap-grid css:compile:basic-template css:compile:google-amp css:prefix css:minify"
+    "build": "npm-run-all css:compile:bootstrap-grid css:compile:basic-template css:compile:google-amp css:prefix css:minify"
   },
   "devDependencies": {
     "autoprefixer": "^10.3.4",
