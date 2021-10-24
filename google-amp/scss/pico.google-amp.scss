@@ -1,9 +1,8 @@
 // Custom colors
 // --------------------
-$primary-500: #E91E63;
-$primary-600: #D81B60;
-$primary-700: #C2185B;
-
+$primary-500: #e91e63;
+$primary-600: #d81b60;
+$primary-700: #c2185b;
 
 // Config
 // --------------------
@@ -26,14 +25,12 @@ $breakpoints: (
   sm: 576px,
   md: 768px,
   lg: null,
-  xl: null
+  xl: null,
 );
-
 
 // Pico Lib
 // --------------------
-@import "../../lib/pico/scss/pico";
-
+@import "../../node_modules/@picocss/pico/scss/pico";
 
 // Custom Styles
 // --------------------

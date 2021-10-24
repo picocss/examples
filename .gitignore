@@ -1,7 +1,2 @@
 *.DS_Store
-prepros.config
-
-lib/pico/.git/
-lib/pico/.gitignore
-lib/pico/test.html
-lib/pico/TODO.md
+node_modules/
