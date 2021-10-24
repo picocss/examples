@@ -6,7 +6,9 @@
 }
 
 /* Typography */
-h2, h3, hgroup > :last-child {
+h2,
+h3,
+hgroup > :last-child {
   font-weight: 200;
 }
 
@@ -48,7 +50,7 @@ form.grid {
 
 /* Aside nav */
 aside img {
-  margin-bottom: .25rem;
+  margin-bottom: 0.25rem;
 }
 
 aside p {

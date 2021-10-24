@@ -55,7 +55,7 @@ a[role=button] {
 [data-theme=light],
 :root:not([data-theme=dark]) {
   color-scheme: light;
-  --background-color: #FFF;
+  --background-color: #fff;
   --color: #39566a;
   --h1-color: #042c49;
   --h2-color: #0f4267;
@@ -68,23 +68,25 @@ a[role=button] {
   --primary: #0eaaaa;
   --primary-hover: #078383;
   --primary-focus: rgba(14, 170, 170, 0.125);
-  --primary-inverse: #FFF;
+  --primary-inverse: #fff;
   --secondary: #4e6d83;
   --secondary-hover: #39566a;
   --secondary-focus: rgba(78, 109, 131, 0.125);
-  --secondary-inverse: #FFF;
+  --secondary-inverse: #fff;
   --contrast: #172936;
   --contrast-hover: #000;
   --contrast-focus: rgba(78, 109, 131, 0.125);
-  --contrast-inverse: #FFF;
+  --contrast-inverse: #fff;
   --mark-background-color: #fff2ca;
   --mark-color: #513b29;
-  --ins-color: #388E3C;
-  --del-color: #C62828;
+  --ins-color: #388e3c;
+  --del-color: #c62828;
   --blockquote-border-color: var(--muted-border-color);
   --blockquote-footer-color: var(--muted-color);
-  --button-box-shadow: 0 0.0625rem 0.1875rem rgba(23, 41, 54, 0.1), 0 0.0625rem 0.125rem rgba(23, 41, 54, 0.1);
-  --button-hover-box-shadow: 0 0.1875rem 0.3750rem rgba(23, 41, 54, 0.05), 0 0.1875rem 0.375rem rgba(23, 41, 54, 0.1);
+  --button-box-shadow: 0 0.0625rem 0.1875rem rgba(23, 41, 54, 0.1),
+    0 0.0625rem 0.125rem rgba(23, 41, 54, 0.1);
+  --button-hover-box-shadow: 0 0.1875rem 0.375rem rgba(23, 41, 54, 0.05),
+    0 0.1875rem 0.375rem rgba(23, 41, 54, 0.1);
   --form-element-background-color: #d8e2e9;
   --form-element-border-color: #d8e2e9;
   --form-element-color: var(--color);
@@ -108,7 +110,7 @@ a[role=button] {
   --range-thumb-hover-color: var(--secondary-hover);
   --range-thumb-active-color: var(--primary);
   --table-border-color: var(--muted-border-color);
-  --table-row-stripped-background-color:#f5f8fa;
+  --table-row-stripped-background-color: #f5f8fa;
   --code-background-color: #ebf0f4;
   --code-color: var(--muted-color);
   --code-kbd-background-color: var(--contrast);
@@ -122,7 +124,9 @@ a[role=button] {
   --accordion-open-summary-color: var(--muted-color);
   --card-background-color: var(--background-color);
   --card-border-color: var(--muted-border-color);
-  --card-box-shadow: 0 0.125rem 1rem rgba(23, 41, 54, 0.04), 0 0.125rem 2rem rgba(23, 41, 54, 0.08), 0 0 0 0.0625rem rgba(23, 41, 54, 0.024);
+  --card-box-shadow: 0 0.125rem 1rem rgba(23, 41, 54, 0.04),
+    0 0.125rem 2rem rgba(23, 41, 54, 0.08),
+    0 0 0 0.0625rem rgba(23, 41, 54, 0.024);
   --card-sectionning-background-color: #fafbfc;
   --progress-background-color: #d1dde5;
   --progress-color: var(--primary);
@@ -154,23 +158,25 @@ a[role=button] {
     --primary: #0eaaaa;
     --primary-hover: #17cfcf;
     --primary-focus: rgba(14, 170, 170, 0.25);
-    --primary-inverse: #FFF;
+    --primary-inverse: #fff;
     --secondary: #4e6d83;
     --secondary-hover: #668499;
     --secondary-focus: rgba(102, 132, 153, 0.25);
-    --secondary-inverse: #FFF;
+    --secondary-inverse: #fff;
     --contrast: #ebf0f4;
-    --contrast-hover: #FFF;
+    --contrast-hover: #fff;
     --contrast-focus: rgba(102, 132, 153, 0.25);
     --contrast-inverse: #000;
     --mark-background-color: #cdc388;
     --mark-color: #0e1a22;
-    --ins-color: #388E3C;
-    --del-color: #C62828;
+    --ins-color: #388e3c;
+    --del-color: #c62828;
     --blockquote-border-color: var(--muted-border-color);
     --blockquote-footer-color: var(--muted-color);
-    --button-box-shadow: 0 0.0625rem 0.1875rem #000, 0 0.0625rem 0.125rem #000;
-    --button-hover-box-shadow: 0 0.1875rem 0.3750rem #000, 0 0.1875rem 0.375rem #000;
+    --button-box-shadow: 0 0.0625rem 0.1875rem #000,
+      0 0.0625rem 0.125rem #000;
+    --button-hover-box-shadow: 0 0.1875rem 0.375rem #000,
+      0 0.1875rem 0.375rem #000;
     --form-element-background-color: #1b2e3c;
     --form-element-border-color: #1b2e3c;
     --form-element-color: var(--color);
@@ -209,7 +215,9 @@ a[role=button] {
     --accordion-open-summary-color: var(--muted-color);
     --card-background-color: #111f29;
     --card-border-color: #0e1a22;
-    --card-box-shadow: 0 0.125rem 1rem rgba(0, 0, 0, 0.06), 0 0.125rem 2rem rgba(0, 0, 0, 0.12), 0 0 0 0.0625rem rgba(0, 0, 0, 0.036);
+    --card-box-shadow: 0 0.125rem 1rem rgba(0, 0, 0, 0.06),
+      0 0.125rem 2rem rgba(0, 0, 0, 0.12),
+      0 0 0 0.0625rem rgba(0, 0, 0, 0.036);
     --card-sectionning-background-color: #14242f;
     --progress-background-color: #1f3443;
     --progress-color: var(--primary);
@@ -240,23 +248,25 @@ a[role=button] {
   --primary: #0eaaaa;
   --primary-hover: #17cfcf;
   --primary-focus: rgba(14, 170, 170, 0.25);
-  --primary-inverse: #FFF;
+  --primary-inverse: #fff;
   --secondary: #4e6d83;
   --secondary-hover: #668499;
   --secondary-focus: rgba(102, 132, 153, 0.25);
-  --secondary-inverse: #FFF;
+  --secondary-inverse: #fff;
   --contrast: #ebf0f4;
-  --contrast-hover: #FFF;
+  --contrast-hover: #fff;
   --contrast-focus: rgba(102, 132, 153, 0.25);
   --contrast-inverse: #000;
   --mark-background-color: #cdc388;
   --mark-color: #0e1a22;
-  --ins-color: #388E3C;
-  --del-color: #C62828;
+  --ins-color: #388e3c;
+  --del-color: #c62828;
   --blockquote-border-color: var(--muted-border-color);
   --blockquote-footer-color: var(--muted-color);
-  --button-box-shadow: 0 0.0625rem 0.1875rem #000, 0 0.0625rem 0.125rem #000;
-  --button-hover-box-shadow: 0 0.1875rem 0.3750rem #000, 0 0.1875rem 0.375rem #000;
+  --button-box-shadow: 0 0.0625rem 0.1875rem #000,
+    0 0.0625rem 0.125rem #000;
+  --button-hover-box-shadow: 0 0.1875rem 0.375rem #000,
+    0 0.1875rem 0.375rem #000;
   --form-element-background-color: #1b2e3c;
   --form-element-border-color: #1b2e3c;
   --form-element-color: var(--color);
@@ -295,7 +305,9 @@ a[role=button] {
   --accordion-open-summary-color: var(--muted-color);
   --card-background-color: #111f29;
   --card-border-color: #0e1a22;
-  --card-box-shadow: 0 0.125rem 1rem rgba(0, 0, 0, 0.06), 0 0.125rem 2rem rgba(0, 0, 0, 0.12), 0 0 0 0.0625rem rgba(0, 0, 0, 0.036);
+  --card-box-shadow: 0 0.125rem 1rem rgba(0, 0, 0, 0.06),
+    0 0.125rem 2rem rgba(0, 0, 0, 0.12),
+    0 0 0 0.0625rem rgba(0, 0, 0, 0.036);
   --card-sectionning-background-color: #14242f;
   --progress-background-color: #1f3443;
   --progress-color: var(--primary);

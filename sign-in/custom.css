@@ -17,7 +17,6 @@ article div {
 }
 
 @media (min-width: 576px) {
-
   body > main {
     padding: 1.25rem 0;
   }
@@ -28,7 +27,6 @@ article div {
 }
 
 @media (min-width: 768px) {
-
   body > main {
     padding: 1.5rem 0;
   }
@@ -39,7 +37,6 @@ article div {
 }
 
 @media (min-width: 992px) {
-
   body > main {
     padding: 1.75rem 0;
   }
@@ -50,7 +47,6 @@ article div {
 }
 
 @media (min-width: 1200px) {
-
   body > main {
     padding: 2rem 0;
   }

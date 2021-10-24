@@ -153,8 +153,8 @@ kbd {
   --h6-color: #4d606d;
   --muted-color: #73828c;
   --muted-border-color: #edf0f3;
-  --primary: #D81B60;
-  --primary-hover: #C2185B;
+  --primary: #d81b60;
+  --primary-hover: #c2185b;
   --primary-focus: rgba(216, 27, 96, 0.125);
   --primary-inverse: #fff;
   --secondary: #596b78;
@@ -243,8 +243,8 @@ kbd {
     --h6-color: #afbbc4;
     --muted-color: #73828c;
     --muted-border-color: #1f2d38;
-    --primary: #D81B60;
-    --primary-hover: #E91E63;
+    --primary: #d81b60;
+    --primary-hover: #e91e63;
     --primary-focus: rgba(216, 27, 96, 0.25);
     --primary-inverse: #fff;
     --secondary: #596b78;
@@ -333,8 +333,8 @@ kbd {
   --h6-color: #afbbc4;
   --muted-color: #73828c;
   --muted-border-color: #1f2d38;
-  --primary: #D81B60;
-  --primary-hover: #E91E63;
+  --primary: #d81b60;
+  --primary-hover: #e91e63;
   --primary-focus: rgba(216, 27, 96, 0.25);
   --primary-inverse: #fff;
   --secondary: #596b78;
