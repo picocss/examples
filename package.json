@@ -1,0 +1,19 @@
+{
+  "name": "@picocss/examples",
+  "version": "1.0.0",
+  "description": "Templates for Picocss",
+  "author": "Lucas Larroche",
+  "homepage": "https://picocss.com/examples",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/picocss/examples.git"
+  },
+  "bugs": {
+    "url": "https://github.com/picocss/examples/issues"
+  },
+  "dependencies": {
+    "@picocss/pico": "^1.4.0",
+    "bootstrap": "^5.1.3"
+  }
+}
