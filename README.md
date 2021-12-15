@@ -9,6 +9,8 @@ Minimalist templates to discover Pico in action:
 - **[Preview](https://picocss.com/examples/preview/)**  
   A starter example with all elements and components used in Pico
 
+- **[Preview-RTL](https://picocss.com/examples/preview-rtl/)**  
+  A starter example (RTL) with all elements and components used in Pico
 - **[Class-less](https://picocss.com/examples/classless/)**  
   Just a pure semantic HTML markup, without `.classes`
 

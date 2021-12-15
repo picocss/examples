@@ -1,0 +1,25 @@
+/* Arabic Font */
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap');
+
+:root {
+  --font-family: 'Readex Pro', sans-serif !important;
+}
+
+html, body {
+  direction: rtl;
+}
+
+/* Fix input input validation */
+/* Set padding-right, to make text display in rigth palce */
+input:not([type=checkbox]):not([type=radio])[aria-invalid]{
+  /*SVG Icon size is 24×24 so... just multiply with 1.75 */
+  padding-right: calc(24px * 1.75) !important;
+}
+
+p {
+  line-height: calc(1rem * 1.75);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: calc(1rem * 2.25);
+}
