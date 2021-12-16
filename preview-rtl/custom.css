@@ -10,17 +10,22 @@ html, body {
   direction: rtl;
 }
 
-/* Fix input validation styling (RTL) */
+/* Fix input validation icon for (RTL) styling */
 /* Set padding-right, to make text display in rigth palce */
-input:not([type=checkbox]):not([type=radio])[aria-invalid]{
-  /*SVG Icon size is 24×24 so... just multiply with 1.75 */
-  padding-right: calc(24px * 1.75) !important;
+html[dir="rtl"] input:not([type=checkbox]):not([type=radio])[aria-invalid]{
+  /*Old Workaround, SVG Icon size is 24×24 so... just add padding-right multiply with 1.75 */
+  /*padding-right: calc(24px * 1.75) !important;*/
+
+  /* set position to left */
+  background-position: center left .75rem;
 }
 
-p {
+p, figcaption {
   line-height: calc(1rem * 1.75);
+  cursor: text;
 }
 
 h1, h2, h3, h4, h5, h6 {
   line-height: calc(1rem * 2.25);
+  cursor: text;
 }
