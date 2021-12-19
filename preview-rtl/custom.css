@@ -1,17 +1,8 @@
-/* Arabic Font */
-@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap');
-
-
-:root {
-  --font-family: 'Readex Pro', sans-serif !important;
-}
-
 html, body {
   direction: rtl;
 }
 
 /* Fix input validation icon for (RTL) styling */
-/* Set padding-right, to make text display in rigth palce */
 html[dir="rtl"] input:not([type=checkbox]):not([type=radio])[aria-invalid]{
   /*Old Workaround, SVG Icon size is 24×24 so... just add padding-right multiply with 1.75 */
   /*padding-right: calc(24px * 1.75) !important;*/
