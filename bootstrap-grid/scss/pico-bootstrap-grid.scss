@@ -1,6 +1,5 @@
 // Pico.css (https://picocss.com)
-// --------------------
-@import "../../node_modules/@picocss/pico/scss/pico";
+@import "@picocss/pico/scss/pico";
 
 /*!
  * Bootstrap Grid 5.1.3 (https://getbootstrap.com/)
@@ -19,11 +18,11 @@ $grid-breakpoints: (
   xl: 1200px,
 );
 
-@import "../../node_modules/bootstrap/scss/functions";
-@import "../../node_modules/bootstrap/scss/variables";
-@import "../../node_modules/bootstrap/scss/mixins/lists";
-@import "../../node_modules/bootstrap/scss/mixins/breakpoints";
-@import "../../node_modules/bootstrap/scss/mixins/grid";
-@import "../../node_modules/bootstrap/scss/mixins/utilities";
-@import "../../node_modules/bootstrap/scss/vendor/rfs";
-@import "../../node_modules/bootstrap/scss/grid";
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins/lists";
+@import "bootstrap/scss/mixins/breakpoints";
+@import "bootstrap/scss/mixins/grid";
+@import "bootstrap/scss/mixins/utilities";
+@import "bootstrap/scss/vendor/rfs";
+@import "bootstrap/scss/grid";
