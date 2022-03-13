@@ -36,6 +36,12 @@ header hgroup {
   margin-bottom: var(--spacing-company);
 }
 
+/* Nav */
+summary[role="link"].contrast:is([aria-current],:hover,:active,:focus) {
+  background-color: transparent;
+  color: var(--contrast-hover);
+}
+
 /* Main */
 @media (min-width: 992px) {
   main .grid {
