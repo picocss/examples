@@ -10,7 +10,7 @@
     <link rel="canonical" href="https://picocss.com/examples/preview/">
 
     <!-- Pico.css -->
-    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <link rel="stylesheet" href="../node_modules/@picocss/pico/css/pico.min.css">
 
   </head>
 
@@ -24,10 +24,30 @@
       </hgroup>
       <nav>
         <ul>
-          <li>Theme:</li>
-          <li><a href="#" data-theme-switcher="auto">Auto</a></li>
-          <li><a href="#" data-theme-switcher="light">Light</a></li>
-          <li><a href="#" data-theme-switcher="dark">Dark</a></li>
+          <li>
+            <details role="list">
+              <summary aria-haspopup="listbox" role="button" class="secondary">Theme</summary>
+              <ul role="listbox">
+                <li><a href="#" data-theme-switcher="auto">Auto</a></li>
+                <li><a href="#" data-theme-switcher="light">Light</a></li>
+                <li><a href="#" data-theme-switcher="dark">Dark</a></li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <details role="list">
+              <summary aria-haspopup="listbox">Examples</summary>
+              <ul role="listbox">
+                <li><a href="../preview/">Preview</a></li>
+                <li><a href="../classless/">Class-less</a></li>
+                <li><a href="../basic-template/">Basic template</a></li>
+                <li><a href="../company/">Company</a></li>
+                <li><a href="../google-amp/">Google Amp</a></li>
+                <li><a href="../sign-in/">Sign in</a></li>
+                <li><a href="../bootstrap-grid/">Bootstrap grid</a></li>
+              </ul>
+            </details>
+          </li>
         </ul>
       </nav>
     </header><!-- ./ Header -->
@@ -305,15 +325,21 @@
         </figure>
       </section><!-- ./ Tables -->
 
+      <!-- Modal -->
+      <section id="modal">
+        <h2>Modal</h2>
+        <button class="contrast" data-target="modal-example" onclick="toggleModal(event)">Launch demo modal</button>
+      </section><!-- ./ Modal -->
+
       <!-- Accordions -->
       <section id="accordions">
         <h2>Accordions</h2>
         <details>
-          <summary>Collapsible elements 1</summary>
+          <summary>Accordion 1</summary>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque urna diam, tincidunt nec porta sed, auctor id velit. Etiam venenatis nisl ut orci consequat, vitae tempus quam commodo. Nulla non mauris ipsum. Aliquam eu posuere orci. Nulla convallis lectus rutrum quam hendrerit, in facilisis elit sollicitudin. Mauris pulvinar pulvinar mi, dictum tristique elit auctor quis. Maecenas ac ipsum ultrices, porta turpis sit amet, congue turpis.</p>
         </details>
         <details open>
-          <summary>Collapsible elements 2</summary>
+          <summary>Accordion 2</summary>
           <ul>
             <li>Vestibulum id elit quis massa interdum sodales.</li>
             <li>Nunc quis eros vel odio pretium tincidunt nec quis neque.</li>
@@ -351,8 +377,23 @@
       <small>Built with <a href="https://picocss.com">Pico</a> • <a href="https://github.com/picocss/examples/blob/master/preview/index.html">Source code</a></small>
     </footer><!-- ./ Footer -->
 
+    <!-- Modal example -->
+    <dialog id="modal-example">
+      <article>
+        <a href="#close" aria-label="Close" class="close" data-target="modal-example" onclick="toggleModal(event)"></a>
+        <h3>Confirm your action!</h3>
+        <p>Cras sit amet maximus risus. Pellentesque sodales odio sit amet augue finibus pellentesque. Nullam finibus risus non semper euismod.</p>
+        <footer>
+          <a href="#cancel" role="button" class="secondary" data-target="modal-example" onclick="toggleModal(event)">Cancel</a><a href="#confirm" role="button" data-target="modal-example" onclick="toggleModal(event)">Confirm</a>
+        </footer>
+      </article>
+    </dialog><!-- ./ Modal example -->
+
     <!-- Minimal theme switcher -->
     <script src="../js/minimal-theme-switcher.js"></script>
+
+    <!-- Modal -->
+    <script src="../js/modal.js"></script>
 
     <script>
     // Set indeterminate progress bar

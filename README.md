@@ -9,6 +9,9 @@ Minimalist templates to discover Pico in action:
 - **[Preview](https://picocss.com/examples/preview/)**  
   A starter example with all elements and components used in Pico
 
+- **[Right-to-left (RTL) preview](https://picocss.com/examples/preview-rtl/)**  
+  A starter example in Arabic with all the elements and components used in Pico
+
 - **[Class-less](https://picocss.com/examples/classless/)**  
   Just a pure semantic HTML markup, without `.classes`
 
@@ -24,5 +27,5 @@ Minimalist templates to discover Pico in action:
 - **[Sign in](https://picocss.com/examples/sign-in/)**  
   A minimalist layout for Login pages
 
-- **[Bootstrap grid system](https://picocss.com/examples/bootstrap-grid/)**  
+- **[Pico + Bootstrap grid system](https://picocss.com/examples/bootstrap-grid/)**  
   Custom CSS build with the Bootstrap grid system to manage complex grid layouts in Pico
