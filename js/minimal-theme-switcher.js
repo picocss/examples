@@ -9,6 +9,7 @@ const themeSwitcher = {
   
   // Config
   _scheme: "auto",
+  menuTarget: "details[role='list']",
   buttonsTarget: "a[data-theme-switcher]",
   buttonAttribute: "data-theme-switcher",
   rootAttribute: "data-theme",
@@ -41,13 +42,12 @@ const themeSwitcher = {
   initSwitchers() {
     const buttons = document.querySelectorAll(this.buttonsTarget);
     buttons.forEach((button) => {
-      button.addEventListener(
-        "click",
-        () => {
-          this.scheme = button.getAttribute(this.buttonAttribute);
-        },
-        false
-      );
+      button.addEventListener("click", () => {
+        // Set scheme
+        this.scheme = button.getAttribute(this.buttonAttribute);
+        // Close dropdown
+        document.querySelector(this.menuTarget).removeAttribute("open");
+      }, false);
     });
   },
 
