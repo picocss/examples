@@ -42,7 +42,8 @@ const themeSwitcher = {
   initSwitchers() {
     const buttons = document.querySelectorAll(this.buttonsTarget);
     buttons.forEach((button) => {
-      button.addEventListener("click", () => {
+      button.addEventListener("click", event => {
+        event.preventDefault();
         // Set scheme
         this.scheme = button.getAttribute(this.buttonAttribute);
         // Close dropdown
