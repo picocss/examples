@@ -327,6 +327,12 @@
         </figure>
       </section><!-- ./ Tables -->
 
+      <!-- Modal -->
+      <section id="modal">
+        <h2>Modal</h2>
+        <button class="contrast" data-target="modal-example" onclick="toggleModal(event)">Launch demo modal</button>
+      </section><!-- ./ Modal -->
+
       <!-- Accordions -->
       <section id="accordions">
         <h2>Accordions</h2>
@@ -373,8 +379,23 @@
       <small>Built with <a href="https://picocss.com">Pico</a> • <a href="https://github.com/picocss/examples/blob/master/basic-template/">Source code</a></small>
     </footer><!-- ./ Footer -->
 
+    <!-- Modal example -->
+    <dialog id="modal-example">
+      <article>
+        <a href="#close" aria-label="Close" class="close" data-target="modal-example" onclick="toggleModal(event)"></a>
+        <h3>Confirm your action!</h3>
+        <p>Cras sit amet maximus risus. Pellentesque sodales odio sit amet augue finibus pellentesque. Nullam finibus risus non semper euismod.</p>
+        <footer>
+          <a href="#cancel" role="button" class="secondary" data-target="modal-example" onclick="toggleModal(event)">Cancel</a><a href="#confirm" role="button" data-target="modal-example" onclick="toggleModal(event)">Confirm</a>
+        </footer>
+      </article>
+    </dialog><!-- ./ Modal example -->
+
     <!-- Minimal theme switcher -->
     <script src="../js/minimal-theme-switcher.js"></script>
+
+    <!-- Modal -->
+    <script src="../js/modal.js"></script>
 
     <script>
     // Set indeterminate progress bar
