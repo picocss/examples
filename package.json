@@ -1,6 +1,6 @@
 {
   "name": "@picocss/examples",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Minimalist templates to discover Pico in action",
   "author": "Lucas Larroche",
   "homepage": "https://picocss.com/examples",
@@ -28,7 +28,7 @@
     "postcss:minify": "echo '\\033[32m[picocss/examples] Done\\033[0m\n'"
   },
   "devDependencies": {
-    "@picocss/pico": "^1.5.1",
+    "@picocss/pico": "^1.5.2",
     "autoprefixer": "^10.4.7",
     "bootstrap": "^5.1.3",
     "clean-css-cli": "^5.6.0",
