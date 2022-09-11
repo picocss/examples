@@ -1,15 +1,8 @@
 // Pico.css (https://picocss.com)
 @import "@picocss/pico/scss/pico";
 
-/*!
- * Bootstrap Grid 5.1.3 (https://getbootstrap.com/)
- * Copyright 2011-2021 The Bootstrap Authors
- * Copyright 2011-2021 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
-
+// Bootstrap (https://getbootstrap.com/)
 $include-column-box-sizing: true;
-
 $grid-breakpoints: (
   xs: 0,
   sm: 576px,
@@ -18,10 +11,14 @@ $grid-breakpoints: (
   xl: 1200px,
 );
 
+@import "bootstrap/scss/mixins/banner";
+@include bsBanner(Grid);
 @import "bootstrap/scss/functions";
 @import "bootstrap/scss/variables";
+@import "bootstrap/scss/maps";
 @import "bootstrap/scss/mixins/lists";
 @import "bootstrap/scss/mixins/breakpoints";
+@import "bootstrap/scss/mixins/container";
 @import "bootstrap/scss/mixins/grid";
 @import "bootstrap/scss/mixins/utilities";
 @import "bootstrap/scss/vendor/rfs";
