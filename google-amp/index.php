@@ -89,16 +89,16 @@
         <h2>A simple layout for Google Amp, with inlined CSS, Fixed nav, Sidebar and Social Share.</h2>
       </hgroup>
       <figure>
-        <amp-img src="https://source.unsplash.com/pGM4sjt_BdQ/2000x1000"
-                 srcset="https://source.unsplash.com/pGM4sjt_BdQ/2000x1000 2000w,
-                         https://source.unsplash.com/pGM4sjt_BdQ/1000x500 1000w,
-                         https://source.unsplash.com/pGM4sjt_BdQ/500x250 500w"
+        <amp-img src="assets/brooke-lark-pGM4sjt_BdQ-unsplash-2000x1000.jpg"
+                 srcset="assets/brooke-lark-pGM4sjt_BdQ-unsplash-2000x1000.jpg 2000w,
+                         assets/brooke-lark-pGM4sjt_BdQ-unsplash-1000x500.jpg 1000w,
+                         assets/brooke-lark-pGM4sjt_BdQ-unsplash-500x250.jpg 500w"
                  width="2000"
                  height="1000"
                  layout="responsive"
                  alt="Cupcake">
         </amp-img>
-        <figcaption>Image from <a href="https://unsplash.com">unsplash.com</a></figcaption>
+        <figcaption>Image from <a href="https://unsplash.com/photos/pGM4sjt_BdQ" target="_blank">unsplash.com</a></figcaption>
       </figure>
       <p>
         <amp-social-share type="twitter" width="2rem" height="1.5rem" aria-label="Share on Titter"></amp-social-share>

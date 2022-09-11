@@ -66,7 +66,7 @@ summary[role="link"].secondary:is([aria-current],:hover,:active,:focus) {
 article div:nth-of-type(2) {
   display: none;
   background-color: #374956;
-  background-image: url("https://source.unsplash.com/8jeWeKdygfk/1000x1200");
+  background-image: url("assets/alessio-soggetti-8jeWeKdygfk-unsplash-1000x1200.jpg");
   background-position: center;
   background-size: cover;
 }
