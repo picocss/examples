@@ -13,28 +13,35 @@
     "url": "https://github.com/picocss/examples/issues"
   },
   "scripts": {
-    "build": "npm-run-all css:compile:bootstrap-grid css:compile:basic-template css:compile:google-amp css:prefix css:minify --silent",
+    "build": "npm-run-all css:compile:bootstrap-grid css:compile:basic-template css:compile:google-amp css:prefix css:prefix:google-amp css:minify css:minify:google-amp build:google-amp build:clean:google-amp --silent",
     
     "css:compile:basic-template": "sass --style expanded --source-map --embed-sources --no-error-css basic-template/scss/:basic-template/css/",
     "css:compile:bootstrap-grid": "sass --load-path=node_modules --style expanded --source-map --embed-sources --no-error-css bootstrap-grid/scss/:bootstrap-grid/css/",
-    "css:compile:google-amp": "sass --load-path=node_modules --style expanded --source-map --embed-sources --no-error-css google-amp/scss/:google-amp/css/",
+    "css:compile:google-amp": "sass --load-path=node_modules --style expanded --source-map --embed-sources --no-error-css google-amp/src/scss/:google-amp/src/css/",
     "css:prefix": "postcss --config postcss.config.js --replace */css/*.css !*/css/*.min.css",
+    "css:prefix:google-amp": "postcss --config postcss.config.js --replace google-amp/src/css/*.css !google-amp/src/css/*.min.css",
     "css:minify": "cleancss -O1 --inline local --with-rebase --source-map --source-map-inline-sources --batch --batch-suffix '.min' */css/*.css !*/css/*.min.css",
+    "css:minify:google-amp": "cleancss -O1 specialComments:0 --inline local --batch --batch-suffix '.min' google-amp/src/css/*.css !google-amp/src/css/*.min.css",
+    "build:google-amp": "html-includes --src google-amp/src --dest google-amp --quiet",
+    "build:clean:google-amp": "replace-in-file '@charset \"UTF-8\";' '' google-amp/*.html --quiet",
     
     "precss:compile:basic-template": "echo '[picocss/examples] Compile `basic-template`'",
     "precss:compile:bootstrap-grid": "echo '[picocss/examples] Compile `bootstrap-grid`'",
     "precss:compile:google-amp": "echo '[picocss/examples] Compile `google-amp`'",
     "precss:minify": "echo '[picocss/examples] Minify .css files'",
-    "postcss:minify": "echo '\\033[32m[picocss/examples] Done\\033[0m\n'"
+    "prebuild:google-amp": "echo '[picocss/examples] Build Google Amp pages'",
+    "postbuild:clean:google-amp": "echo '\\033[32m[picocss/examples] Done\\033[0m\n'"
   },
   "devDependencies": {
     "@picocss/pico": "^1.5.4",
     "autoprefixer": "^10.4.8",
     "bootstrap": "^5.2.1",
     "clean-css-cli": "^5.6.1",
+    "html-includes": "^4.4.1",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.16",
     "postcss-cli": "^10.0.0",
+    "replace-in-file": "^6.3.5",
     "sass": "^1.54.9"
   },
   "browserslist": [
