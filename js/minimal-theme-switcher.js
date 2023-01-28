@@ -13,7 +13,7 @@ const themeSwitcher = {
   buttonsTarget: "a[data-theme-switcher]",
   buttonAttribute: "data-theme-switcher",
   rootAttribute: "data-theme",
-  localStorageKey: "picoPreferedColorScheme",
+  localStorageKey: "picoPreferredColorScheme",
 
   // Init
   init() {
@@ -31,8 +31,8 @@ const themeSwitcher = {
     return this._scheme;
   },
 
-  // Prefered color scheme
-  get preferedColorScheme() {
+  // Preferred color scheme
+  get preferredColorScheme() {
     return window.matchMedia("(prefers-color-scheme: dark)").matches
       ? "dark"
       : "light";
@@ -55,7 +55,7 @@ const themeSwitcher = {
   // Set scheme
   set scheme(scheme) {
     if (scheme == "auto") {
-      this.preferedColorScheme == "dark"
+      this.preferredColorScheme == "dark"
         ? (this._scheme = "dark")
         : (this._scheme = "light");
     } else if (scheme == "dark" || scheme == "light") {
