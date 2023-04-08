@@ -1,0 +1,12 @@
+{
+  "name": "v1-preview",
+  "version": "1.0.0",
+  "main": "index.html",
+  "license": "MIT",
+  "scripts": {
+    "start": "serve"
+  },
+  "devDependencies": {
+    "serve": "^14.2.0"
+  }
+}
