@@ -1,0 +1,13 @@
+{
+  "name": "v1-basic-template",
+  "version": "1.0.0",
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "sass --style expanded --no-source-map scss/:css/"
+  },
+  "devDependencies": {
+    "sass": "^1.61.0"
+  }
+}
