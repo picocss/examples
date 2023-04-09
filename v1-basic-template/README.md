@@ -8,3 +8,5 @@
 | 1 | HTML, SASS |
 
 A basic custom template for Pico using only CSS custom properties (variables).
+
+[![Open in CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/picocss/examples/tree/master/v1-basic-template)

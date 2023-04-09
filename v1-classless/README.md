@@ -8,3 +8,5 @@
 | 1 | HTML |
 
 A pure semantic HTML markup, without `.classes`.
+
+[![Open in CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/picocss/examples/tree/master/v1-classless)

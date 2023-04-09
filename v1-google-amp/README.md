@@ -8,3 +8,5 @@
 | 1 | HTML, SASS |
 
 A simple layout for Google Amp, with inlined CSS.
+
+[![Open in CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/picocss/examples/tree/master/v1-google-amp)
