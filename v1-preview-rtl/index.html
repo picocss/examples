@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Right-to-left preview • Pico.css</title>
+    <meta
+      name="description"
+      content="A starter example in Arabic with all the elements and components used in Pico"
+    />
+    <link rel="shortcut icon" href="https://picocss.com/favicon.ico" />
+    <link rel="canonical" href="https://picocss.com/examples/preview/" />
+
+    <!-- Pico.css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="container">
+      <hgroup>
+        <h1>بيكو</h1>
+        <h2>
+          مثال على البدأ في استخدام <span dir="ltr">Pico (RTL)</span> مع كل العناصر والمكونات
+          الموجودة في نظام تصميم Pico.
+        </h2>
+      </hgroup>
+      <nav>
+        <ul>
+          <li>الوضع (اللون):</li>
+          <li><a href="#" data-theme-switcher="auto">التلقائي</a></li>
+          <li><a href="#" data-theme-switcher="light">النهاري</a></li>
+          <li><a href="#" data-theme-switcher="dark">المظلم</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- ./ Header -->
+
+    <!-- Main -->
+    <main class="container">
+      <!-- Preview -->
+      <section id="preview">
+        <h2>مُعاينة</h2>
+        <p></p>
+        <form>
+          <div class="grid">
+            <input
+              type="text"
+              name="firstname"
+              placeholder="الاسم الأول"
+              aria-label="First name"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="عنوان البريد الإلكتروني"
+              aria-label="Email address"
+              required
+            />
+            <button type="submit">إشتراك</button>
+          </div>
+          <fieldset>
+            <label for="terms">
+              <input type="checkbox" role="switch" id="terms" name="terms" />
+              أنا أوفق على <a href="#" onclick="event.preventDefault()">سياسة الخُصوصية</a>
+            </label>
+          </fieldset>
+        </form>
+      </section>
+      <!-- ./ Preview -->
+
+      <!-- Typography-->
+      <section id="typography">
+        <h2>أُسلوب النص المكتوب</h2>
+        <p>الفرق بين الفيل والنملة، أن رجل الفيل تُنمل بينما رجل النملة لا تُفيل</p>
+
+        <!-- Blockquote-->
+        <blockquote>
+          "باح باح، زمن السماح يا رأس التفاح"
+          <footer>
+            <cite>- غامبول واترسون</cite>
+          </footer>
+        </blockquote>
+
+        <!-- Lists-->
+        <h3>القوائم</h3>
+        <ul>
+          <li>كُنت أُعاني من الغباء</li>
+          <li>كان أقصى حلمي بعض الذكاء</li>
+          <li>كان التفكير قمة المستحيل</li>
+          <li>كالسلحفاة في الفهم والتحليل</li>
+        </ul>
+
+        <!-- Inline text elements-->
+        <h3>عناصر نصية ما بين السطور</h3>
+        <div class="grid">
+          <p><a href="#" onclick="event.preventDefault()">رابط رئيسي</a></p>
+          <p><a href="#" class="secondary" onclick="event.preventDefault()">رابط ثانوي</a></p>
+          <p>
+            <a href="#" class="contrast" onclick="event.preventDefault()">رابط ذو لون مُغاير</a>
+          </p>
+        </div>
+        <div class="grid">
+          <p><strong>غليظ</strong></p>
+          <p><em>مائل</em></p>
+          <p><u>تحتهُ خط</u></p>
+        </div>
+        <div class="grid">
+          <p><del>محذوف</del></p>
+          <p><ins>مُضاف</ins></p>
+          <p><s>مشطوب</s></p>
+        </div>
+        <div class="grid">
+          <p><small>صغير</small></p>
+          <p>نص مع <sub>رمز سفلي</sub></p>
+          <p>نص مع <sup>رمز علوي</sup></p>
+        </div>
+        <div class="grid">
+          <p><abbr title="Abbreviation" data-tooltip="وصف">اختصار</abbr></p>
+          <p><kbd>زر</kbd></p>
+          <p><mark>نص بارز</mark></p>
+        </div>
+
+        <!-- Headings-->
+        <h3>عنوان 3</h3>
+        <p>
+          دومًا طوال عمري أمسكتُ لساني، أخيرًا أتى اليوم لأفتح قلبي، كتمتُ أحاسيسي واليوم تكلمت عن
+          كل شيء في قلبي أطلقت كلماتي، سيقول وسيقول كلامُو بالعرض وكلامو بالطول.
+        </p>
+        <h4>عنوان 4</h4>
+        <p>
+          كنتُ ملك الصف وأنا مهموم، كنت محترمًا لكني الآن مذموم، كنت بالماضي مُهمًا وليس لي أعتبار،
+          لّمَا ألعب مع أصحابي في المعلب لكنني منهار، الحياة جميلة والبسمة ليست حولي.
+        </p>
+        <h5>عنوان 5</h5>
+        <p>شيء ما يحدث لي، شيء ما يخنقني، حولي، شيء ما يحدث لي لم أعد أعرف نفسي.</p>
+        <h6>عنوان 6</h6>
+        <p>
+          هو صديقي، صديقي، صديقي الصغير هو أحسن صديق بكل العالم، هو صديقي، صديقي الصغير، أحسن صديق
+          بكل العالم، سيفهم قريبًا صغيرًا وكبيرًا أنك أفصل صديقٍ على الإطلاق! هو صديقي صديقي
+          الصغير...
+        </p>
+
+        <!-- Medias-->
+        <figure>
+          <img
+            src="img/aleksandar-jason-a562ZEFKW8I-unsplash-2000x1000.jpg"
+            alt="Minimal landscape"
+          />
+          <figcaption>
+            الصورة مأخوذة من
+            <a href="https://unsplash.com/photos/a562ZEFKW8I" target="_blank">unsplash.com</a>
+          </figcaption>
+        </figure>
+      </section>
+      <!-- ./ Typography-->
+
+      <!-- Buttons-->
+      <section id="buttons">
+        <h2>الأزرار</h2>
+        <div class="grid">
+          <button>أساسي</button>
+          <button class="secondary">ثانوي</button>
+          <button class="contrast">مُغاير</button>
+        </div>
+        <div class="grid">
+          <button class="outline">حد باللون الاساسي</button>
+          <button class="outline secondary">حد باللون الثانوي</button>
+          <button class="outline contrast">حد بلون مُغاير</button>
+        </div>
+      </section>
+      <!-- ./ Buttons -->
+
+      <!-- Form elements-->
+      <section id="form">
+        <form>
+          <h2>عناصر النموذج</h2>
+
+          <!-- Search -->
+          <label for="search">شريط البحث</label>
+          <input type="search" id="search" name="search" placeholder="البحث" />
+
+          <!-- Text -->
+          <label for="text">نص</label>
+          <input type="text" id="text" name="text" placeholder="أكتب نصًا" />
+          <small>أكتب ما لا يزيد عن مئة حرف.</small>
+
+          <!-- Select -->
+          <label for="select">الإختيار</label>
+          <select id="select" name="select" required>
+            <option value="" selected>خيار...</option>
+            <option>…</option>
+          </select>
+
+          <!-- File browser -->
+          <label for="file"
+            >أرفع ملف
+            <input type="file" id="file" name="file" />
+          </label>
+
+          <!-- Range slider control -->
+          <label for="range"
+            >شريط الحد
+            <input type="range" min="0" max="100" value="50" id="range" name="range" />
+          </label>
+
+          <!-- States -->
+          <div class="grid">
+            <label for="valid">
+              مقبول
+              <input
+                type="text"
+                id="valid"
+                name="valid"
+                placeholder="قيمة مقبولة"
+                aria-invalid="false"
+              />
+            </label>
+            <label for="invalid">
+              غير مقبول
+              <input
+                type="text"
+                id="invalid"
+                name="invalid"
+                placeholder="قيمة مرفوضة"
+                aria-invalid="true"
+              />
+            </label>
+            <label for="disabled">
+              مُعطل
+              <input type="text" id="disabled" name="disabled" placeholder="معطل" disabled />
+            </label>
+          </div>
+
+          <div class="grid">
+            <!-- Date-->
+            <label for="date"
+              >التاريخ
+              <input type="date" id="date" name="date" />
+            </label>
+
+            <!-- Time-->
+            <label for="time"
+              >الوقت
+              <input type="time" id="time" name="time" />
+            </label>
+
+            <!-- Color-->
+            <label for="color"
+              >الألوان
+              <input type="color" id="color" name="color" value="#0eaaaa" />
+            </label>
+          </div>
+
+          <div class="grid">
+            <!-- Checkboxes -->
+            <fieldset>
+              <legend><strong>مربع اختيارات مُتعددة</strong></legend>
+              <label for="checkbox-1">
+                <input type="checkbox" id="checkbox-1" name="checkbox-1" checked />
+                اختيار
+              </label>
+              <label for="checkbox-2">
+                <input type="checkbox" id="checkbox-2" name="checkbox-2" />
+                اختيار
+              </label>
+            </fieldset>
+
+            <!-- Radio buttons -->
+            <fieldset>
+              <legend><strong>زر اختيار واحد</strong></legend>
+              <label for="radio-1">
+                <input type="radio" id="radio-1" name="radio" value="radio-1" checked />
+                اختيار
+              </label>
+              <label for="radio-2">
+                <input type="radio" id="radio-2" name="radio" value="radio-2" />
+                اختيار
+              </label>
+            </fieldset>
+
+            <!-- Switch -->
+            <fieldset>
+              <legend><strong>زر التبديل (Switches)</strong></legend>
+              <label for="switch-1">
+                <input type="checkbox" id="switch-1" name="switch-1" role="switch" checked />
+                بدل
+              </label>
+              <label for="switch-2">
+                <input type="checkbox" id="switch-2" name="switch-2" role="switch" />
+                بدل
+              </label>
+            </fieldset>
+          </div>
+
+          <!-- Buttons -->
+          <input type="reset" value="إعادة تعين" onclick="event.preventDefault()" />
+          <input type="submit" value="إرسال" onclick="event.preventDefault()" />
+        </form>
+      </section>
+      <!-- ./ Form elements-->
+
+      <!-- Tables -->
+      <section id="tables">
+        <h2>جدول</h2>
+        <figure>
+          <table role="grid">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">عنوان</th>
+                <th scope="col">عنوان</th>
+                <th scope="col">عنوان</th>
+                <th scope="col">عنوان</th>
+                <th scope="col">عنوان</th>
+                <th scope="col">عنوان</th>
+                <th scope="col">عنوان</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>حقل</td>
+                <td>حقل</td>
+                <td>حقل</td>
+                <td>حقل</td>
+                <td>حقل</td>
+                <td>حقل</td>
+                <td>حقل</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>حقل</td>
+                <td>حقل</td>
+                <td>حقل</td>
+                <td>حقل</td>
+                <td>حقل</td>
+                <td>حقل</td>
+                <td>حقل</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>حقل</td>
+                <td>حقل</td>
+                <td>حقل</td>
+                <td>حقل</td>
+                <td>حقل</td>
+                <td>حقل</td>
+                <td>حقل</td>
+              </tr>
+            </tbody>
+          </table>
+        </figure>
+      </section>
+      <!-- ./ Tables -->
+
+      <!-- Accordions -->
+      <section id="accordions">
+        <h2>قائمة قابلة للطي</h2>
+        <details>
+          <summary>عنصر قابل للطي 1</summary>
+          <p>
+            سأشتري الكتشب وكله تمام، سأضعه فوق الطعام يا سلام، طعم الكتشب رائع لذيذ المذاق (مذاق)،
+            طعم الكتشب رائع على كل الأطباق، كالبيتزا والباستا، وعلى الأستيك، ينظف أُذنيك، وجهك،
+            ويديك، ضعه على كل شيء ليرجع جديد (جديد)، ضعه على كل شيء فهو مفيد (مفيد)، فوق كل شيء
+            موجودٌ لديك حتى الكيك (الكيك)، كل شيء قد تقبله يديك (يديك)... للبطاطا والكباب لتزيت
+            الأبواب، قطرةٌ منه ترد الشباب...
+          </p>
+        </details>
+        <details open>
+          <summary>عنصر قابل للطي 2</summary>
+          <ul>
+            <li>الحياة فرح...</li>
+            <li>الحياة تجربة...</li>
+            <li>لمَّّ الحياة صعبة؟</li>
+            <li>أنظر حولك واستوعبها!</li>
+          </ul>
+        </details>
+      </section>
+      <!-- ./ Accordions -->
+
+      <!-- Article-->
+      <article id="article">
+        <h2>مقالة</h2>
+        <p>
+          عليك قول الحقيقة إلا إذا أضطررت للكذب، وأن كذبت عليك أن تصدق في كذبك، إلا إذا كنت تصدق مع
+          كذاب والكذاب سيصدق ما قلت من كذب، عندها يكون الكذب أصدقَ من الصدق، والصدق أكذبَ من الكذب
+          فـيستوي الصدق والكذب.
+        </p>
+        <footer><small>غامبول يشرح متى يستوي الصدق والكذب</small></footer>
+      </article>
+      <!-- ./ Article-->
+
+      <!-- Progress -->
+      <section id="progress">
+        <h2>شريط التقدم</h2>
+        <progress id="progress-1" value="25" max="100"></progress>
+        <progress id="progress-2"></progress>
+      </section>
+      <!-- ./ Progress -->
+
+      <!-- Loading -->
+      <section id="loading">
+        <h2>التحميل</h2>
+        <article aria-busy="true"></article>
+        <button aria-busy="true">الرجاء الإنتظار...</button>
+      </section>
+      <!-- ./ Loading -->
+    </main>
+    <!-- ./ Main -->
+
+    <!-- Footer -->
+    <footer class="container">
+      <small
+        >تم بناء هذه الصفحة باستخدام <a href="https://picocss.com">Pico</a> •
+        <a href="https://github.com/picocss/examples/blob/master/v1-preview-rtl"
+          >الكود المصدري</a
+        ></small
+      >
+    </footer>
+    <!-- ./ Footer -->
+
+    <!-- Minimal theme switcher -->
+    <script src="js/minimal-theme-switcher.js"></script>
+  </body>
+</html>
