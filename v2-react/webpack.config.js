@@ -1,4 +1,4 @@
-const CopyWebpackPlugin = require('copy-webpack-plugin');
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 
@@ -32,11 +32,11 @@ module.exports = {
     }),
     new CopyWebpackPlugin({
       patterns: [
-        { 
-          from: 'public', 
-          to: '', 
+        {
+          from: "public",
+          to: "",
           globOptions: {
-            ignore: ['**/*.html'],
+            ignore: ["**/*.html"],
           },
         },
       ],
@@ -46,6 +46,7 @@ module.exports = {
     static: {
       directory: path.join(__dirname, "dist"),
     },
+    allowedHosts: "all",
     hot: true,
     open: true,
   },
