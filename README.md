@@ -18,7 +18,7 @@ Minimalist templates to discover Pico in action:
 
 ---
 
-<details>
+<details open>
   <summary><strong>Pico v1 examples</strong></summary>
 
 - **[Preview](https://codesandbox.io/s/github/picocss/examples/tree/master/v1-preview)**  
