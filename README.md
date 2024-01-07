@@ -6,6 +6,21 @@
 
 Minimalist templates to discover Pico in action:
 
+<details open>
+  <summary><strong>Pico v2 examples</strong></summary>
+
+- **[HTML](https://codesandbox.io/s/github/picocss/examples/tree/master/v2-html)**  
+  A pure HTML example for Pico CSS
+
+- **[React](https://codesandbox.io/s/github/picocss/examples/tree/master/v2-react)**  
+ A minimalist React example with Pico CSS
+</details>
+
+---
+
+<details>
+  <summary><strong>Pico v1 examples</strong></summary>
+
 - **[Preview](https://codesandbox.io/s/github/picocss/examples/tree/master/v1-preview)**  
   A starter example with most of the Pico components and styles.
 
@@ -21,11 +36,13 @@ Minimalist templates to discover Pico in action:
 - **[Company](https://codesandbox.io/s/github/picocss/examples/tree/master/v1-company)**  
   A classic company or blog layout with a sidebar.
 
-- **[Google Amp](https://codesandbox.io/s/github/picocss/examples/tree/master/v1-google-amp)**   
+- **[Google Amp](https://codesandbox.io/s/github/picocss/examples/tree/master/v1-google-amp)**  
   A simple layout for Google Amp, with inlined CSS.
 
 - **[Sign in](https://codesandbox.io/s/github/picocss/examples/tree/master/v1-sign-in)**  
-A minimalist layout for Login pages.
+  A minimalist layout for Login pages.
 
 - **[Pico + Bootstrap grid system](https://codesandbox.io/s/github/picocss/examples/tree/master/v1-bootstrap-grid)**  
   Custom CSS build with the Bootstrap grid system to manage complex grid layouts in Pico.
+
+</details>

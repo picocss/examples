@@ -1,0 +1,7 @@
+{
+  "hardReloadOnChange": true,
+  "template": "react",
+  "container": {
+    "port": 3000
+  }
+}
