@@ -1,0 +1,16 @@
+@use "sass:map";
+@use "@picocss/pico/scss/pico" as * with (
+  $theme-color: "indigo",
+  $enable-semantic-container: true,
+  $enable-classes: false
+);
+
+body {
+  > main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    max-width: map.get(map.get($breakpoints, "sm"), "viewport");
+  }
+}
