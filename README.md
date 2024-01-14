@@ -9,8 +9,8 @@ Minimalist templates to discover Pico in action:
 <details open>
   <summary><strong>Pico v2 examples</strong></summary>
 
-- **[HTML](https://codesandbox.io/s/github/picocss/examples/tree/master/v2-html)**  
-  A pure HTML example for Pico CSS
+- **[Preview](https://codesandbox.io/s/github/picocss/examples/tree/master/v2-html?file=%2Findex.html)**  
+  A pure HTML example, without package manager or JavaScript.
 
 - **[React](https://codesandbox.io/s/github/picocss/examples/tree/master/v2-react)**  
  A minimalist React example with Pico CSS

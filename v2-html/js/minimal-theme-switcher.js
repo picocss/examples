@@ -22,12 +22,7 @@ const themeSwitcher = {
 
   // Get color scheme from local storage
   get schemeFromLocalStorage() {
-    if (typeof window.localStorage !== "undefined") {
-      if (window.localStorage.getItem(this.localStorageKey) !== null) {
-        return window.localStorage.getItem(this.localStorageKey);
-      }
-    }
-    return this._scheme;
+    return window.localStorage?.getItem(this.localStorageKey) ?? this._scheme;
   },
 
   // Preferred color scheme
@@ -46,7 +41,7 @@ const themeSwitcher = {
           // Set scheme
           this.scheme = button.getAttribute(this.buttonAttribute);
           // Close dropdown
-          document.querySelector(this.menuTarget).removeAttribute("open");
+          document.querySelector(this.menuTarget)?.removeAttribute("open");
         },
         false
       );
@@ -56,7 +51,7 @@ const themeSwitcher = {
   // Set scheme
   set scheme(scheme) {
     if (scheme == "auto") {
-      this.preferredColorScheme == "dark" ? (this._scheme = "dark") : (this._scheme = "light");
+      this._scheme = this.preferredColorScheme;
     } else if (scheme == "dark" || scheme == "light") {
       this._scheme = scheme;
     }
@@ -71,14 +66,12 @@ const themeSwitcher = {
 
   // Apply scheme
   applyScheme() {
-    document.querySelector("html").setAttribute(this.rootAttribute, this.scheme);
+    document.querySelector("html")?.setAttribute(this.rootAttribute, this.scheme);
   },
 
   // Store scheme to local storage
   schemeToLocalStorage() {
-    if (typeof window.localStorage !== "undefined") {
-      window.localStorage.setItem(this.localStorageKey, this.scheme);
-    }
+    window.localStorage?.setItem(this.localStorageKey, this.scheme);
   },
 };
 
