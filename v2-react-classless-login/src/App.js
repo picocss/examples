@@ -1,13 +1,13 @@
 import React from "react";
+import useMinHeight from "./useMinHeight";
 import mainStyles from "./main.scss";
 
 const App = () => {
+  useMinHeight();
+
   return (
     <>
-      <hgroup>
-        <h1>Sign in</h1>
-        <p>A minimalist React example with Pico CSS</p>
-      </hgroup>
+      <h1>Sign in</h1>
       <form>
         <input
           type="text"
