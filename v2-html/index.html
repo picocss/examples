@@ -469,14 +469,16 @@
     <!-- Modal example -->
     <dialog id="modal-example">
       <article>
-        <a
-          href="#close"
-          aria-label="Close"
-          class="close"
-          data-target="modal-example"
-          onclick="toggleModal(event)"
-        ></a>
-        <h3>Confirm your action!</h3>
+        <header>
+          <a
+            href="#close"
+            aria-label="Close"
+            rel="prev"
+            data-target="modal-example"
+            onclick="toggleModal(event)"
+          ></a>
+          <h3>Confirm your action!</h3>
+        </header>
         <p>
           Cras sit amet maximus risus. Pellentesque sodales odio sit amet augue finibus
           pellentesque. Nullam finibus risus non semper euismod.

@@ -17,6 +17,7 @@ let visibleModal = null;
 const toggleModal = (event) => {
   event.preventDefault();
   const modal = document.getElementById(event.currentTarget.dataset.target);
+  if (!modal) return;
   modal && (isModalOpen(modal) ? closeModal(modal) : openModal(modal));
 };
 
