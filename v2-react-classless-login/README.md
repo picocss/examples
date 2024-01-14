@@ -5,7 +5,7 @@
 # React Class-less login
 | Pico version | Tech stack |
 | ----- | ----- |
-| 2 | React |
+| 2 | React, Sass |
 
 A minimal, class-less login page in React, with a custom primary color.
 
