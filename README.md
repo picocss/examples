@@ -9,11 +9,11 @@ Minimalist templates to discover Pico in action:
 <details open>
   <summary><strong>Pico v2 examples</strong></summary>
 
-- **[Preview](https://codesandbox.io/s/github/picocss/examples/tree/master/v2-html?file=%2Findex.html)**  
+- **[Preview](https://codesandbox.io/s/github/picocss/examples/tree/master/v2-html)**  
   A pure HTML example, without package manager or JavaScript.
 
-- **[React](https://codesandbox.io/s/github/picocss/examples/tree/master/v2-react)**  
- A minimalist React example with Pico CSS
+- **[React Class-less login](https://codesandbox.io/s/github/picocss/examples/tree/master/v2-react-classless-login)**  
+ A minimal, class-less login page in React, with a custom primary color.
 </details>
 
 ---
