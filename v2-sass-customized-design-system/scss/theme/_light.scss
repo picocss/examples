@@ -1,6 +1,6 @@
 @use "sass:color";
 @use "sass:map";
-@use "settings" as *; 
+@use "settings" as *;
 @use "colors" as *;
 @use "utils/box-shadow";
 @use "utils/functions";
@@ -27,7 +27,7 @@ $bitcoin-color: #f7931a;
   #{$css-var-prefix}primary-border: var(#{$css-var-prefix}primary-background);
   #{$css-var-prefix}primary-underline: #{rgba($bitcoin-color, 0.5)};
   #{$css-var-prefix}primary-hover: #{color.scale($bitcoin-color, $lightness: -21%)};
-  #{$css-var-prefix}primary-hover-background: var(#{$css-var-prefix}primary-hover);
+  #{$css-var-prefix}primary-hover-background: #{color.scale($bitcoin-color, $lightness: 21%)};
   #{$css-var-prefix}primary-hover-border: var(#{$css-var-prefix}primary-hover-background);
   #{$css-var-prefix}primary-hover-underline: var(#{$css-var-prefix}primary-hover);
   #{$css-var-prefix}primary-focus: #{rgba($bitcoin-color, 0.375)};
@@ -143,8 +143,8 @@ $bitcoin-color: #f7931a;
     #{$css-var-prefix}range-border-color: #{$slate-100};
     #{$css-var-prefix}range-active-border-color: #{$slate-200};
     #{$css-var-prefix}range-thumb-border-color: var(#{$css-var-prefix}background-color);
-    #{$css-var-prefix}range-thumb-color: var(#{$css-var-prefix}secondary-background);
-    #{$css-var-prefix}range-thumb-active-color: var(#{$css-var-prefix}primary-background);
+    #{$css-var-prefix}range-thumb-color: var(#{$css-var-prefix}primary-background);
+    #{$css-var-prefix}range-thumb-active-color: var(#{$css-var-prefix}primary-hover-background);
   }
 
   // Form validation icons

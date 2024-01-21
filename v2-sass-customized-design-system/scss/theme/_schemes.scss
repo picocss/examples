@@ -1,10 +1,8 @@
 @use "sass:map";
-@use "settings" as *; 
-
+@use "settings" as *;
 
 @use "light";
 @use "dark";
-
 
 /**
   * Color schemes
@@ -37,4 +35,3 @@ progress,
 [type="range"] {
   accent-color: var(#{$css-var-prefix}primary);
 }
-

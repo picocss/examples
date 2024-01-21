@@ -1,6 +1,6 @@
 @use "sass:color";
 @use "sass:map";
-@use "settings" as *; 
+@use "settings" as *;
 @use "colors" as *;
 @use "utils/box-shadow";
 @use "utils/functions";
@@ -26,7 +26,7 @@ $bitcoin-color: #f7931a;
   #{$css-var-prefix}primary-background: var(#{$css-var-prefix}primary);
   #{$css-var-prefix}primary-border: var(#{$css-var-prefix}primary-background);
   #{$css-var-prefix}primary-underline: #{rgba($bitcoin-color, 0.5)};
-  #{$css-var-prefix}primary-hover: #{color.scale($bitcoin-color, $lightness: -21%)};
+  #{$css-var-prefix}primary-hover: #{color.scale($bitcoin-color, $lightness: 21%)};
   #{$css-var-prefix}primary-hover-background: var(#{$css-var-prefix}primary-hover);
   #{$css-var-prefix}primary-hover-border: var(#{$css-var-prefix}primary-hover-background);
   #{$css-var-prefix}primary-hover-underline: var(#{$css-var-prefix}primary-hover);
@@ -138,15 +138,15 @@ $bitcoin-color: #f7931a;
     }
   }
 
-   // Range (input[type="range"])
-   @if map.get($modules, "forms/input-range") {
+  // Range (input[type="range"])
+  @if map.get($modules, "forms/input-range") {
     #{$css-var-prefix}range-border-color: #{$slate-850};
     #{$css-var-prefix}range-active-border-color: #{$slate-800};
     #{$css-var-prefix}range-thumb-border-color: var(#{$css-var-prefix}background-color);
-    #{$css-var-prefix}range-thumb-color: var(#{$css-var-prefix}secondary-background);
-    #{$css-var-prefix}range-thumb-active-color: var(#{$css-var-prefix}primary-background);
+    #{$css-var-prefix}range-thumb-color: var(#{$css-var-prefix}primary-background);
+    #{$css-var-prefix}range-thumb-active-color: var(#{$css-var-prefix}primary-hover-background);
   }
-  
+
   // Form validation icons
   @if map.get($modules, "forms/basics") {
     #{$css-var-prefix}icon-valid: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='#{functions.display-rgb(mix($jade-450, $slate-600))}' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");

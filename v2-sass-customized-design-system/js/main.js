@@ -14,7 +14,7 @@ const form = document.querySelector("form");
 const addressInput = form.querySelector("#address");
 const amountInput = form.querySelector("#amount");
 const priorityInput = form.querySelector("#priority");
-const priorityOptions= form.querySelectorAll("#priorities option");
+const priorityOptions = form.querySelectorAll("#priorities option");
 
 // Amounts targets
 const table = form.querySelector("table");

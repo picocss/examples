@@ -9,13 +9,15 @@ $border-thumb: 2px;
     width: 100%;
     height: $height-track;
     background: linear-gradient(
-      to right,
-      transparent var(#{$css-var-prefix}selected-ratio, 50%),
-      var(#{$css-var-prefix}range-border-color) var(#{$css-var-prefix}selected-ratio, 50%)
-    ), linear-gradient(
-      to right,
-      var(#{$css-var-prefix}range-border-color), var(#{$css-var-prefix}primary-background)
-    );
+        to right,
+        transparent var(#{$css-var-prefix}selected-ratio, 50%),
+        var(#{$css-var-prefix}range-border-color) var(#{$css-var-prefix}selected-ratio, 50%)
+      ),
+      linear-gradient(
+        to right,
+        var(#{$css-var-prefix}range-active-border-color),
+        var(#{$css-var-prefix}primary-background)
+      );
   }
 
   margin-bottom: 0;
@@ -47,12 +49,13 @@ datalist#priorities {
     width: 0;
     color: var(#{$css-var-prefix}muted-color);
     font-size: 0.875em;
+    transition: color var(#{$css-var-prefix}transition);
 
     &:hover {
       color: var(#{$css-var-prefix}primary-hover);
     }
 
-    &::after{
+    &::after {
       display: block;
       position: absolute;
       inset: 0 -2rem;
