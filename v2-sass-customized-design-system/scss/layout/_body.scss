@@ -2,8 +2,13 @@
 @use "settings" as *;
 
 body {
-  > main {
+  > main,
+  > footer {
+    max-width: map.get(map.get($breakpoints, "md"), "viewport");
+    margin-inline: auto;
+  }
 
+  > main {
     svg {
       display: block;
       width: 4rem;
@@ -13,13 +18,9 @@ body {
     }
 
     form {
-      max-width: map.get(map.get($breakpoints, "md"), "viewport");
-      margin-inline: auto;
-
       label {
         color: var(#{$css-var-prefix}muted-color);
       }
-
 
       :last-child {
         margin-bottom: 0;
