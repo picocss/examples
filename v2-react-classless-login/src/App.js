@@ -1,12 +1,22 @@
-import React from "react";
-import useMinHeight from "./useMinHeight";
+import React, { useRef, useEffect } from "react";
 import mainStyles from "./main.scss";
 
 const App = () => {
-  useMinHeight();
+  const mainRef = useRef();
+  useEffect(() => {
+    const setMinHeight = () => {
+      if (!mainRef.current) return;
+      mainRef.current.style.minHeight = `${window.innerHeight}px`;
+    };
+    setMinHeight();
+    window.addEventListener("resize", setMinHeight);
+    return () => {
+      window.removeEventListener("resize", setMinHeight);
+    };
+  }, []);
 
   return (
-    <main>
+    <main ref={mainRef}>
       <h1>Sign in</h1>
       <form>
         <input
