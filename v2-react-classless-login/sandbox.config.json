@@ -1,7 +1,0 @@
-{
-  "hardReloadOnChange": true,
-  "template": "node",
-  "container": {
-    "node": "18"
-  }
-}
