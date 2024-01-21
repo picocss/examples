@@ -22,6 +22,10 @@ An example to customize Pico CSS with SASS.
 A minimal, class-less login page in React, with a custom primary color.
 </details>
 
+- **[React color schemes and modal](https://codesandbox.io/s/github/picocss/examples/tree/master/v2-react-color-schemes-and-modal)**  
+Switch color schemes and open modals with React.
+</details>
+
 ---
 
 <details open>
