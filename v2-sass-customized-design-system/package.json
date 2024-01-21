@@ -5,20 +5,18 @@
   "private": true,
   "main": "index.html",
   "scripts": {
-    "start": "npm-run-all build serve",
     "build": "npm-run-all sort-scss css",
     "sort-scss": "postcss --config scss ./scss/**/*.scss --replace",
     "css": "npm-run-all css-compile css-prefix",
     "css-compile": "sass --style compressed --source-map --embed-sources --no-error-css --load-path=node_modules/@picocss/pico/scss/ scss/:css/",
     "css-prefix": "postcss --replace css/main.css --use autoprefixer --map",
-    "dev": "npm-run-all --parallel watch browser-sync",
-    "watch": "nodemon -e html,scss -x \"npm run build\"",
-    "browser-sync": "browser-sync --no-ui --no-notify start --server --files='*.html, css/*.css'"
+    "dev": "npm-run-all build serve watch",
+    "watch": "nodemon -e html,js,scss -x \"npm run build\"",
+    "serve": "serve"
   },
   "devDependencies": {
     "@picocss/pico": "2.0.0-rc2",
     "autoprefixer": "^10.4.17",
-    "browser-sync": "^3.0.2",
     "caniuse-lite": "1.0.30001579",
     "css-declaration-sorter": "^7.1.1",
     "nodemon": "^3.0.3",
