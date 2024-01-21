@@ -1,0 +1,64 @@
+@use "settings" as *;
+
+$height-track: 0.375rem;
+$height-thumb: 1.25rem;
+$border-thumb: 2px;
+
+#priority[type="range"] {
+  @mixin slider-track {
+    width: 100%;
+    height: $height-track;
+    background: linear-gradient(
+      to right,
+      transparent var(#{$css-var-prefix}selected-ratio, 50%),
+      var(#{$css-var-prefix}range-border-color) var(#{$css-var-prefix}selected-ratio, 50%)
+    ), linear-gradient(
+      to right,
+      var(#{$css-var-prefix}range-border-color), var(#{$css-var-prefix}primary-background)
+    );
+  }
+
+  margin-bottom: 0;
+
+  &::-webkit-slider-runnable-track {
+    @include slider-track;
+  }
+
+  &::-moz-range-track {
+    @include slider-track;
+  }
+
+  &::-ms-track {
+    @include slider-track;
+  }
+}
+
+datalist#priorities {
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - $height-thumb + ($border-thumb * 2));
+  margin-top: -0.25rem;
+  margin-inline: auto;
+
+  option {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 0;
+    color: var(#{$css-var-prefix}muted-color);
+    font-size: 0.875em;
+
+    &:hover {
+      color: var(#{$css-var-prefix}primary-hover);
+    }
+
+    &::after{
+      display: block;
+      position: absolute;
+      inset: 0 -2rem;
+      content: "";
+      text-align: center;
+      cursor: pointer;
+    }
+  }
+}

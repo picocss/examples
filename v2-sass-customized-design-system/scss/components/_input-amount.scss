@@ -1,0 +1,48 @@
+@use "sass:map";
+@use "settings" as *;
+
+label[for="amount"] {
+  margin-bottom: calc(var(#{$css-var-prefix}spacing) * -0.25);
+  text-align: center;
+}
+
+input[type="number"] {
+  #{$css-var-prefix}line-height: 1;
+  -moz-appearance: textfield;
+  height: calc(
+    2.5rem * var(#{$css-var-prefix}line-height) +
+      var(#{$css-var-prefix}form-element-spacing-vertical) * 2 + var(#{$css-var-prefix}border-width) *
+      2
+  );
+  margin: 0;
+  border: none;
+  background: none;
+  box-shadow: none;
+  font-weight: 700;
+  font-size: 2.5rem;
+  font-variant-numeric: tabular-nums;
+  text-align: center;
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  &:is(:active, :focus) {
+    color: var(#{$css-var-prefix}primary);
+  }
+
+  + small[data-type="amount"] {
+    display: block;
+    margin-top: calc(var(#{$css-var-prefix}spacing) * -0.25);
+    margin-bottom: 2rem;
+    font-size: 1em;
+    text-align: center;
+    text-align: center;
+
+    [data-type="usd"] {
+      margin-right: 0;
+    }
+  }
+}

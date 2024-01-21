@@ -1,0 +1,12 @@
+node_modules/
+
+# Build folder
+/css/
+
+# Logs
+*.log
+
+# System files
+.DS_Store
+Thumbs.db
+

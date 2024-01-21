@@ -1,0 +1,24 @@
+@use "settings" as *;
+
+table {
+  margin-block: calc(var(#{$css-var-prefix}spacing) * 3);
+
+  tbody {
+    td {
+      font-size: 0.875em;
+    }
+  }
+
+  tr {
+    vertical-align: top;
+    
+    th,
+    td {
+      padding: calc(var(#{$css-var-prefix}spacing) / 2) 0;
+
+      &:last-of-type {
+        text-align: right;
+      }
+    }
+  }
+}

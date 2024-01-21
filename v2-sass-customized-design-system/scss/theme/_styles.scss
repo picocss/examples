@@ -1,0 +1,176 @@
+@use "sass:map";
+@use "settings" as *;
+@use "colors" as *;
+@use "utils/functions";
+
+/**
+   * Styles
+   */
+
+:root {
+  // Typography
+  #{$css-var-prefix}font-family-emoji: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
+  #{$css-var-prefix}font-family-sans-serif: system-ui, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif, var(#{$css-var-prefix}font-family-emoji);
+  #{$css-var-prefix}font-family-monospace: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas,
+    "Liberation Mono", monospace, var(#{$css-var-prefix}font-family-emoji);
+  #{$css-var-prefix}font-family: var(#{$css-var-prefix}font-family-sans-serif);
+  #{$css-var-prefix}line-height: 1.5;
+  #{$css-var-prefix}font-weight: 400;
+  #{$css-var-prefix}font-size: 100%;
+  #{$css-var-prefix}text-underline-offset: 0.1rem;
+
+  // Responsive root font size
+  @if $enable-responsive-typography {
+    @each $key, $values in $breakpoints {
+      @if $values {
+        @media (min-width: map.get($values, "breakpoint")) {
+          #{$css-var-prefix}font-size: map.get($values, "root-font-size");
+        }
+      }
+    }
+  }
+
+  // Borders
+  #{$css-var-prefix}border-radius: 0.375rem;
+  #{$css-var-prefix}border-width: 0.0625rem;
+  #{$css-var-prefix}outline-width: 0.125rem;
+
+  // Transitions
+  #{$css-var-prefix}transition: 0.2s ease-in-out;
+
+  // Spacings
+  #{$css-var-prefix}spacing: 1rem;
+
+  // Spacings for typography elements
+  @if map.get($modules, "content/typography") {
+    #{$css-var-prefix}typography-spacing-vertical: 1rem;
+  }
+
+  // Spacings for body > header, body > main, body > footer, section, article
+  @if map.get($modules, "layout/landmarks") or
+    map.get($modules, "layout/section") or
+    map.get($modules, "components/card") or
+    map.get($modules, "components/modal")
+  {
+    #{$css-var-prefix}block-spacing-vertical: calc(var(#{$css-var-prefix}spacing) * 1.5);
+    #{$css-var-prefix}block-spacing-horizontal: calc(var(#{$css-var-prefix}spacing) * 1.5);
+  }
+
+  // Spacings for form elements and button
+  @if map.get($modules, "content/button") or map.get($modules, "forms/basic") {
+    #{$css-var-prefix}form-element-spacing-vertical: 0.75rem;
+    #{$css-var-prefix}form-element-spacing-horizontal: 1rem;
+  }
+
+  // Font weight for form labels & fieldsets legend
+  @if map.get($modules, "forms/basic") {
+    #{$css-var-prefix}form-label-font-weight: var(#{$css-var-prefix}font-weight);
+  }
+
+  // Checkboxes icons
+  @if map.get($modules, "forms/checkbox-radio-switch") {
+    #{$css-var-prefix}icon-checkbox: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='#{functions.display-rgb($white)}' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");
+    #{$css-var-prefix}icon-minus: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='#{functions.display-rgb($white)}' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");
+  }
+
+  // Chevron icons
+  @if map.get($modules, "forms/basics") or
+    map.get($modules, "components/accordion") or
+    map.get($modules, "components/dropdown")
+  {
+    #{$css-var-prefix}icon-chevron: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='#{functions.display-rgb($zinc-400)}' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  }
+}
+
+// Link
+@if map.get($modules, "content/link") {
+  a {
+    #{$css-var-prefix}text-decoration: underline;
+
+    // Secondary & Contrast
+    @if enable-classes {
+      &.secondary,
+      &.contrast {
+        #{$css-var-prefix}text-decoration: underline;
+      }
+    }
+  }
+}
+
+// Typography
+@if map.get($modules, "content/typography") {
+  // Small
+  small {
+    #{$css-var-prefix}font-size: 0.875em;
+  }
+
+  // Headings
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    #{$css-var-prefix}font-weight: 700;
+  }
+
+  h1 {
+    #{$css-var-prefix}font-size: 2rem;
+    #{$css-var-prefix}line-height: 1.125;
+    #{$css-var-prefix}typography-spacing-top: 3rem;
+  }
+
+  h2 {
+    #{$css-var-prefix}font-size: 1.75rem;
+    #{$css-var-prefix}line-height: 1.15;
+    #{$css-var-prefix}typography-spacing-top: 2.625rem;
+  }
+
+  h3 {
+    #{$css-var-prefix}font-size: 1.5rem;
+    #{$css-var-prefix}line-height: 1.175;
+    #{$css-var-prefix}typography-spacing-top: 2.25rem;
+  }
+
+  h4 {
+    #{$css-var-prefix}font-size: 1.25rem;
+    #{$css-var-prefix}line-height: 1.2;
+    #{$css-var-prefix}typography-spacing-top: 1.874rem;
+  }
+
+  h5 {
+    #{$css-var-prefix}font-size: 1.125rem;
+    #{$css-var-prefix}line-height: 1.225;
+    #{$css-var-prefix}typography-spacing-top: 1.6875rem;
+  }
+
+  h6 {
+    #{$css-var-prefix}font-size: 1rem;
+    #{$css-var-prefix}line-height: 1.25;
+    #{$css-var-prefix}typography-spacing-top: 1.5rem;
+  }
+}
+
+// Buttons
+button,
+[type="submit"],
+[type="reset"],
+[type="button"],
+[type="file"]::file-selector-button,
+[role="button"] {
+  #{$css-var-prefix}font-weight: 700;
+}
+
+// Table
+@if map.get($modules, "content/table") {
+  thead,
+  tfoot {
+    th,
+    td {
+      #{$css-var-prefix}font-weight: 600;
+      #{$css-var-prefix}border-width: 0.1875rem;
+    }
+  }
+}

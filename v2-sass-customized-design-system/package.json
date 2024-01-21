@@ -1,0 +1,36 @@
+{
+  "name": "v2-sass-customized-design-system",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "main": "index.html",
+  "scripts": {
+    "start": "npm-run-all build serve",
+    "build": "npm-run-all sort-scss css",
+    "sort-scss": "postcss --config scss ./scss/**/*.scss --replace",
+    "css": "npm-run-all css-compile css-prefix",
+    "css-compile": "sass --style compressed --source-map --embed-sources --no-error-css --load-path=node_modules/@picocss/pico/scss/ scss/:css/",
+    "css-prefix": "postcss --replace css/main.css --use autoprefixer --map",
+    "dev": "npm-run-all --parallel watch browser-sync",
+    "watch": "nodemon -e html,scss -x \"npm run build\"",
+    "browser-sync": "browser-sync --no-ui --no-notify start --server --files='*.html, css/*.css'"
+  },
+  "devDependencies": {
+    "@picocss/pico": "2.0.0-rc2",
+    "autoprefixer": "^10.4.17",
+    "browser-sync": "^3.0.2",
+    "caniuse-lite": "1.0.30001579",
+    "css-declaration-sorter": "^7.1.1",
+    "nodemon": "^3.0.3",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.33",
+    "postcss-cli": "^11.0.0",
+    "postcss-scss": "^4.0.9",
+    "prettier": "^3.2.4",
+    "sass": "^1.70.0",
+    "serve": "^14.2.1"
+  },
+  "browserslist": [
+    "defaults"
+  ]
+}

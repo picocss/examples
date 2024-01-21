@@ -1,0 +1,8 @@
+{
+  "hardReloadOnChange": true,
+  "template": "node",
+  "startScript": "serve",
+  "container": {
+    "node": "18"
+  }
+}

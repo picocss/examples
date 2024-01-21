@@ -1,0 +1,65 @@
+@use "pico" with (
+  $theme-color: "indigo",
+  $enable-semantic-container: true,
+  $enable-viewport: false,
+  $enable-classes: false,
+  $modules: (
+    // Theme
+    "themes/default": false,
+
+    // Layout
+    "layout/document": true,
+    "layout/landmarks": true,
+    "layout/container": false,
+    "layout/section": false,
+    "layout/grid": false,
+    "layout/scroller": false,
+
+    // Content
+    "content/link": true,
+    "content/typography": true,
+    "content/embedded": false,
+    "content/button": true,
+    "content/table": true,
+    "content/code": false,
+    "content/miscs": false,
+
+    // Forms
+    "forms/basics": true,
+    "forms/checkbox-radio-switch": false,
+    "forms/input-color": false,
+    "forms/input-date": false,
+    "forms/input-file": false,
+    "forms/input-range": true,
+    "forms/input-search": false,
+
+    // Components
+    "components/accordion": false,
+    "components/card": false,
+    "components/dropdown": false,
+    "components/group": false,
+    "components/loading": false,
+    "components/modal": false,
+    "components/nav": false,
+    "components/progress": false,
+    "components/tooltip": false,
+
+    // Utilities
+    "utilities/accessibility": false,
+    "utilities/reduce-motion": false,
+  )
+);
+
+// Custom theme
+@use "theme/styles";
+@use "theme/schemes";
+
+// Layout
+@use "layout/main";
+
+// Custom components
+@use "components/input-amount";
+@use "components/priority-range";
+@use "components/invoice-table";
+@use "components/amount";
+

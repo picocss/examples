@@ -1,0 +1,53 @@
+@use "sass:map";
+@use "settings" as *;
+
+[data-type="amount"] {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-variant-numeric: tabular-nums;
+
+  @media (min-width: map.get(map.get($breakpoints, "sm"), "breakpoint")) {
+    flex-direction: row-reverse;
+    align-items: center;
+
+    [data-type="usd"] {
+      margin-right: var(#{$css-var-prefix}spacing);
+    }
+  }
+
+  [data-type="usd"] {
+    color: var(#{$css-var-prefix}muted-color);
+  }
+
+  // Loading
+  [data-type="btc"],
+  [data-type="usd"] {
+    &:empty {
+      display: inline-block;
+      height: calc(1em * var(#{$css-var-prefix}line-height));
+      opacity: 0.25;
+      
+      &:after {
+        display: inline-block;
+        width: 4rem;
+        height: 50%;
+        transform: translateY(50%);
+        border-radius: 0.25rem;
+        background-color: currentColor;
+        content: "\00a0 ";
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: both;
+        animation-name: opacity-pulse;
+        opacity: 1;
+      }
+    }
+
+    @keyframes opacity-pulse {
+      50% {
+        opacity: 0.5;
+      }
+    }
+  }
+}
