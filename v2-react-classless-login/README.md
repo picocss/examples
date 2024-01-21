@@ -2,7 +2,7 @@
   <img src="https://picocss.com/img/logo.svg" width="64" height="64">
 </a>
 
-# React Class-less login
+# React class-less login
 | Pico version | Tech stack |
 | ----- | ----- |
 | 2 | React, Sass |

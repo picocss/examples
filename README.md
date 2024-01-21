@@ -18,7 +18,7 @@ A class-less example, without dependencies.
 - **[Customized design system](https://codesandbox.io/s/github/picocss/examples/tree/master/v2-sass-customized-design-system)**  
 An example to customize Pico CSS with SASS.
 
-- **[React Class-less login](https://codesandbox.io/s/github/picocss/examples/tree/master/v2-react-classless-login)**  
+- **[React class-less login](https://codesandbox.io/s/github/picocss/examples/tree/master/v2-react-classless-login)**  
 A minimal, class-less login page in React, with a custom primary color.
 </details>
 
