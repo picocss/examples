@@ -6,7 +6,7 @@ const App = () => {
   useMinHeight();
 
   return (
-    <>
+    <main>
       <h1>Sign in</h1>
       <form>
         <input
@@ -35,7 +35,7 @@ const App = () => {
           Login
         </button>
       </form>
-    </>
+    </main>
   );
 };
 export default App;

@@ -1,11 +1,12 @@
 @use "sass:map";
 @use "@picocss/pico/scss/pico" as * with (
   $theme-color: "indigo",
+  $semantic-root-element: "#root",
   $enable-semantic-container: true,
   $enable-classes: false
 );
 
-body {
+#root {
   > main {
     display: flex;
     flex-direction: column;
