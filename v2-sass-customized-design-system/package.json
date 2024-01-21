@@ -12,7 +12,8 @@
     "css-prefix": "postcss --replace css/main.css --use autoprefixer --map",
     "dev": "npm-run-all build serve watch",
     "watch": "nodemon -e html,js,scss -x \"npm run build\"",
-    "serve": "serve"
+    "serve": "serve",
+    "start": "npm-run-all dev"
   },
   "devDependencies": {
     "@picocss/pico": "2.0.0-rc2",
