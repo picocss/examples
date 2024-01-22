@@ -1065,9 +1065,10 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@picocss/pico@github:picocss/pico#v2":
-  version "2.0.0-rc2"
-  resolved "https://codeload.github.com/picocss/pico/tar.gz/aaba94868f9db4f32a563445327fe5a323af112f"
+"@picocss/pico@2.0.0-rc3":
+  version "2.0.0-rc3"
+  resolved "https://registry.yarnpkg.com/@picocss/pico/-/pico-2.0.0-rc3.tgz#54027e83f3b4cc6edbd8a6ae695375070547a707"
+  integrity sha512-mx+xPn3fmSfy3toj/y4BySSxDxPRj8AjWkmmYFDgcJvgIo/9ceR6eQI4uqToeENe3gt5uK9GtZT7vuF4JYThfw==
 
 "@sindresorhus/merge-streams@^1.0.0":
   version "1.0.0"
