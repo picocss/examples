@@ -23,10 +23,10 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@picocss/pico@2.0.0-rc3":
-  version "2.0.0-rc3"
-  resolved "https://registry.yarnpkg.com/@picocss/pico/-/pico-2.0.0-rc3.tgz#54027e83f3b4cc6edbd8a6ae695375070547a707"
-  integrity sha512-mx+xPn3fmSfy3toj/y4BySSxDxPRj8AjWkmmYFDgcJvgIo/9ceR6eQI4uqToeENe3gt5uK9GtZT7vuF4JYThfw==
+"@picocss/pico@2.0.0-rc4":
+  version "2.0.0-rc4"
+  resolved "https://registry.yarnpkg.com/@picocss/pico/-/pico-2.0.0-rc4.tgz#eac8473be0ac0be44cef1544da0ba3bddc09474d"
+  integrity sha512-tiDdkvIOUlO8FDOihhHMRY0phOQAsIeIRqF/aoO0npvFhSxK9ICvez/7Vqzc+Ixz8MXD/9fpKc9eGS2k0slqDQ==
 
 "@sindresorhus/merge-streams@^1.0.0":
   version "1.0.0"
@@ -221,15 +221,20 @@ camelcase@^7.0.0:
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-7.0.1.tgz#f02e50af9fd7782bc8b88a3558c32fd3a388f048"
   integrity sha512-xlx1yCK2Oc1APsPXDL2LdlNP6+uu8OCDdhOBSVT279M/S+y75O30C2VuD8T2ogdePBBl7PfPF4504tnLgX3zfw==
 
-caniuse-lite@1.0.30001579, caniuse-lite@^1.0.30001578:
-  version "1.0.30001579"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001579.tgz#45c065216110f46d6274311a4b3fcf6278e0852a"
-  integrity sha512-u5AUVkixruKHJjw/pj9wISlcMpgFWzSrczLZbrqBSxukQixmg0SJ5sZTpvaFvxU0HoQKd4yoyAogyrAz9pzJnA==
+caniuse-lite@1.0.30001581:
+  version "1.0.30001581"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001581.tgz#0dfd4db9e94edbdca67d57348ebc070dece279f4"
+  integrity sha512-whlTkwhqV2tUmP3oYhtNfaWGYHDdS3JYFQBKXxcUR9qqPWsRhFHhoISO2Xnl/g0xyKzht9mI1LZpiNWfMzHixQ==
 
 caniuse-lite@^1.0.30001565:
   version "1.0.30001576"
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001576.tgz#893be772cf8ee6056d6c1e2d07df365b9ec0a5c4"
   integrity sha512-ff5BdakGe2P3SQsMsiqmt1Lc8221NR1VzHj5jXN5vBny9A6fpze94HiVV/n7XRosOlsShJcvMv5mdnpjOGCEgg==
+
+caniuse-lite@^1.0.30001578:
+  version "1.0.30001579"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001579.tgz#45c065216110f46d6274311a4b3fcf6278e0852a"
+  integrity sha512-u5AUVkixruKHJjw/pj9wISlcMpgFWzSrczLZbrqBSxukQixmg0SJ5sZTpvaFvxU0HoQKd4yoyAogyrAz9pzJnA==
 
 chalk-template@0.4.0:
   version "0.4.0"

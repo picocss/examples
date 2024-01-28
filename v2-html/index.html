@@ -5,15 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="color-scheme" content="light dark" />
     <title>Preview • Pico CSS</title>
-    <meta
-      name="description"
-      content="A pure HTML example, without dependencies."
-    />
+    <meta name="description" content="A pure HTML example, without dependencies." />
 
     <!-- Pico.css -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.0.0-rc3/css/pico.min.css"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.0.0-rc4/css/pico.min.css"
     />
   </head>
 
@@ -64,6 +61,7 @@
               name="email"
               placeholder="Email address"
               aria-label="Email address"
+              autocomplete="email"
               required
             />
             <button type="submit">Subscribe</button>
@@ -323,8 +321,8 @@
       <!-- Tables -->
       <section id="tables">
         <h2>Tables</h2>
-        <figure>
-          <table role="grid">
+        <div class="overflow-auto">
+          <table class="striped">
             <thead>
               <tr>
                 <th scope="col">#</th>
@@ -370,7 +368,7 @@
               </tr>
             </tbody>
           </table>
-        </figure>
+        </div>
       </section>
       <!-- ./ Tables -->
 
@@ -429,12 +427,12 @@
         <h2>Group</h2>
         <form>
           <fieldset role="group">
-            <input type="email" placeholder="Enter your email" />
+            <input name="email" type="email" placeholder="Enter your email" autocomplete="email" />
             <input type="submit" value="Subscribe" />
           </fieldset>
         </form>
       </section>
-      <!-- ./ Modal -->
+      <!-- ./ Group -->
 
       <!-- Progress -->
       <section id="progress">

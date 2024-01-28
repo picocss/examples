@@ -5,15 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="color-scheme" content="light dark" />
     <title>Class-less preview • Pico CSS</title>
-    <meta
-      name="description"
-      content="A class-less example, without dependencies."
-    />
+    <meta name="description" content="A class-less example, without dependencies." />
 
     <!-- Pico.css -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.0.0-rc3/css/pico.classless.min.css"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.0.0-rc4/css/pico.classless.min.css"
     />
   </head>
 
@@ -56,6 +53,7 @@
             name="email"
             placeholder="Email address"
             aria-label="Email address"
+            autocomplete="email"
             required
           />
           <button type="submit">Subscribe</button>
@@ -274,60 +272,6 @@
       </section>
       <!-- ./ Form elements-->
 
-      <!-- Tables -->
-      <section id="tables">
-        <h2>Tables</h2>
-        <figure>
-          <table role="grid">
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">Heading</th>
-                <th scope="col">Heading</th>
-                <th scope="col">Heading</th>
-                <th scope="col">Heading</th>
-                <th scope="col">Heading</th>
-                <th scope="col">Heading</th>
-                <th scope="col">Heading</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Cell</td>
-                <td>Cell</td>
-                <td>Cell</td>
-                <td>Cell</td>
-                <td>Cell</td>
-                <td>Cell</td>
-                <td>Cell</td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Cell</td>
-                <td>Cell</td>
-                <td>Cell</td>
-                <td>Cell</td>
-                <td>Cell</td>
-                <td>Cell</td>
-                <td>Cell</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>Cell</td>
-                <td>Cell</td>
-                <td>Cell</td>
-                <td>Cell</td>
-                <td>Cell</td>
-                <td>Cell</td>
-                <td>Cell</td>
-              </tr>
-            </tbody>
-          </table>
-        </figure>
-      </section>
-      <!-- ./ Tables -->
-
       <!-- Modal -->
       <section id="modal">
         <h2>Modal</h2>
@@ -383,12 +327,12 @@
         <h2>Group</h2>
         <form>
           <fieldset role="group">
-            <input type="email" placeholder="Enter your email" />
+            <input name="email" type="email" placeholder="Enter your email" autocomplete="email" />
             <input type="submit" value="Subscribe" />
           </fieldset>
         </form>
       </section>
-      <!-- ./ Modal -->
+      <!-- ./ Group -->
 
       <!-- Progress -->
       <section id="progress">
