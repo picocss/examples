@@ -24,7 +24,7 @@ const App = () => {
           name="login"
           placeholder="Login"
           aria-label="Login"
-          autoComplete="nickname"
+          autoComplete="username"
           required
         />
         <input
