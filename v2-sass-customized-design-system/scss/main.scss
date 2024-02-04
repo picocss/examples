@@ -10,17 +10,17 @@
     // Layout
     "layout/document": true,
     "layout/landmarks": true,
-    "layout/container": false,
     "layout/section": false,
+    "layout/container": false,
     "layout/grid": false,
-    "layout/scroller": false,
+    "layout/overflow-auto": false,
 
     // Content
-    "content/link": true,
     "content/typography": true,
-    "content/embedded": false,
+    "content/link": true,
     "content/button": true,
     "content/table": true,
+    "content/embedded": false,
     "content/code": false,
     "content/miscs": false,
 
