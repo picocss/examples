@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <title>Conditional Styling • Pico CSS</title>
+    <meta name="description" content="A minimal example with the conditional version." />
+
+    <!-- Pico.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.0.0-rc4/css/pico.conditional.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="container">
+      <hgroup>
+        <h1>Pico</h1>
+        <p>Conditional Styling</p>
+      </hgroup>
+      <div class="pico">
+        <nav>
+          <ul>
+            <li><a href="#" data-theme-switcher="auto">Auto</a></li>
+            <li><a href="#" data-theme-switcher="light">Light</a></li>
+            <li><a href="#" data-theme-switcher="dark">Dark</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- ./ Header -->
+
+    <!-- Main -->
+    <main class="container">
+      <!-- Styled -->
+      <section class="pico">
+        <h2>Styled section</h2>
+        <form>
+          <input
+            type="text"
+            name="firstname"
+            placeholder="First name"
+            aria-label="First name"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Email address"
+            aria-label="Email address"
+            autocomplete="email"
+            required
+          />
+          <button type="submit">Subscribe</button>
+        </form>
+      </section>
+      <!-- ./ Styled -->
+
+      <!-- Unstyled -->
+      <section>
+        <h2>Unstyled section</h2>
+        <form>
+          <input
+            type="text"
+            name="firstname"
+            placeholder="First name"
+            aria-label="First name"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Email address"
+            aria-label="Email address"
+            autocomplete="email"
+            required
+          />
+          <button type="submit">Subscribe</button>
+        </form>
+      </section>
+      <!-- ./ Unstyled -->
+    </main>
+
+    <!-- Minimal theme switcher -->
+    <script src="js/minimal-theme-switcher.js"></script>
+  </body>
+</html>
