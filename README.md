@@ -1,6 +1,12 @@
-<a href="https://picocss.com/">
-  <img src="https://picocss.com/img/logo.svg" width="64" height="64">
-</a>
+<p>
+  <a href="https://picocss.com" target="_blank">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/picocss/pico/HEAD/.github/logo-dark.svg">
+      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/picocss/pico/HEAD/.github/logo-light.svg">
+      <img alt="Pico CSS" src="https://raw.githubusercontent.com/picocss/pico/HEAD/.github/logo-light.svg" width="auto" height="60">
+    </picture>
+  </a>
+</p>
 
 # Pico.css examples
 
@@ -30,7 +36,7 @@ A minimal example with the conditional version.
 
 ---
 
-<details open>
+<details>
   <summary><strong>Pico v1 examples</strong></summary>
 
 - **[Preview](https://codesandbox.io/s/github/picocss/examples/tree/master/v1-preview)**  

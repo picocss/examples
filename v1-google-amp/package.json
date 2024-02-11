@@ -12,7 +12,7 @@
     "html:build": "html-includes --src src --dest . --quiet"
   },
   "devDependencies": {
-    "@picocss/pico": "^1.5.11",
+    "@picocss/pico": "^1.5.12",
     "autoprefixer": "^10.4.17",
     "clean-css-cli": "^5.6.3",
     "html-includes": "^5.0.0",

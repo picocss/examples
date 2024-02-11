@@ -2,8 +2,7 @@
 @use "sass:map";
 @use "settings" as *;
 @use "colors" as *;
-@use "utils/box-shadow";
-@use "utils/functions";
+@use "helpers/functions";
 
 $bitcoin-color: #f7931a;
 
@@ -58,7 +57,7 @@ $bitcoin-color: #f7931a;
   #{$css-var-prefix}contrast-inverse: #{$black};
 
   // Box shadow
-  #{$css-var-prefix}box-shadow: box-shadow.shadow($black);
+  #{$css-var-prefix}box-shadow: functions.shadow($black);
 
   // Typography
   @if map.get($modules, "content/typography") {
