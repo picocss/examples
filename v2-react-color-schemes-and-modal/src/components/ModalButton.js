@@ -1,12 +1,12 @@
 import React from "react";
 import { useModal } from "../contexts/ModalContext";
 
-export default function ModalButton(props) {
+export default function ModalButton({ children, ...props }) {
   const { handleOpen } = useModal();
 
   return (
     <button onClick={handleOpen} {...props}>
-      Open Modal
+      {children}
     </button>
   );
 }

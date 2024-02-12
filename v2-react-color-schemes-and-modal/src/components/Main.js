@@ -9,7 +9,7 @@ const Main = (props) => {
       <h1>React color schemes and modal</h1>
       <p>Switch color schemes and open modals with React.</p>
       <ModalProvider>
-        <ModalButton>Modal</ModalButton>
+        <ModalButton>Open Modal</ModalButton>
         <Modal />
       </ModalProvider>
     </main>
