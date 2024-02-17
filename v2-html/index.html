@@ -10,7 +10,7 @@
     <!-- Pico.css -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.0.3/css/pico.min.css"
     />
   </head>
 
@@ -467,13 +467,12 @@
     <dialog id="modal-example">
       <article>
         <header>
-          <a
-            href="#close"
+          <button
             aria-label="Close"
             rel="prev"
             data-target="modal-example"
             onclick="toggleModal(event)"
-          ></a>
+          ></button>
           <h3>Confirm your action!</h3>
         </header>
         <p>
@@ -481,16 +480,16 @@
           pellentesque. Nullam finibus risus non semper euismod.
         </p>
         <footer>
-          <a
-            href="#cancel"
+          <button
             role="button"
             class="secondary"
             data-target="modal-example"
             onclick="toggleModal(event)"
-            >Cancel</a
-          ><a href="#confirm" role="button" data-target="modal-example" onclick="toggleModal(event)"
-            >Confirm</a
           >
+            Cancel</button
+          ><button autofocus data-target="modal-example" onclick="toggleModal(event)">
+            Confirm
+          </button>
         </footer>
       </article>
     </dialog>

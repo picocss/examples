@@ -10,7 +10,7 @@
     <!-- Pico.css -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.0.3/css/pico.classless.min.css"
     />
   </head>
 
@@ -275,9 +275,7 @@
       <!-- Modal -->
       <section id="modal">
         <h2>Modal</h2>
-        <button class="contrast" data-target="modal-example" onclick="toggleModal(event)">
-          Launch demo modal
-        </button>
+        <button class="contrast" onclick="modalExample.showModal()">Launch demo modal</button>
       </section>
       <!-- ./ Modal -->
 
@@ -364,16 +362,10 @@
     <!-- ./ Footer -->
 
     <!-- Modal example -->
-    <dialog id="modal-example">
+    <dialog id="modalExample">
       <article>
         <header>
-          <a
-            href="#close"
-            aria-label="Close"
-            rel="prev"
-            data-target="modal-example"
-            onclick="toggleModal(event)"
-          ></a>
+          <button aria-label="Close" rel="prev" onclick="modalExample.close()"></button>
           <h3>Confirm your action!</h3>
         </header>
         <p>
@@ -381,11 +373,8 @@
           pellentesque. Nullam finibus risus non semper euismod.
         </p>
         <footer>
-          <a href="#cancel" role="button" data-target="modal-example" onclick="toggleModal(event)"
-            >Cancel</a
-          ><a href="#confirm" role="button" data-target="modal-example" onclick="toggleModal(event)"
-            >Confirm</a
-          >
+          <button role="button" onclick="modalExample.close()">Cancel</button
+          ><button autofocus role="button" onclick="modalExample.close()">Confirm</button>
         </footer>
       </article>
     </dialog>
@@ -393,8 +382,5 @@
 
     <!-- Minimal theme switcher -->
     <script src="js/minimal-theme-switcher.js"></script>
-
-    <!-- Modal -->
-    <script src="js/modal.js"></script>
   </body>
 </html>

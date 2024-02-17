@@ -18,11 +18,8 @@ const toggleModal = (event) => {
   event.preventDefault();
   const modal = document.getElementById(event.currentTarget.dataset.target);
   if (!modal) return;
-  modal && (isModalOpen(modal) ? closeModal(modal) : openModal(modal));
+  modal && (modal.open ? closeModal(modal) : openModal(modal));
 };
-
-// Is modal open
-const isModalOpen = (modal) => modal.hasAttribute("open") && modal.getAttribute("open") !== "false";
 
 // Open modal
 const openModal = (modal) => {
@@ -36,7 +33,7 @@ const openModal = (modal) => {
     visibleModal = modal;
     html.classList.remove(openingClass);
   }, animationDuration);
-  modal.setAttribute("open", true);
+  modal.showModal();
 };
 
 // Close modal
@@ -47,7 +44,7 @@ const closeModal = (modal) => {
   setTimeout(() => {
     html.classList.remove(closingClass, isOpenClass);
     html.style.removeProperty(scrollbarWidthCssVar);
-    modal.removeAttribute("open");
+    modal.close();
   }, animationDuration);
 };
 
