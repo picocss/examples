@@ -14,7 +14,7 @@ export default function Modal(props) {
     <dialog onClick={handleClickOverlay} open={modalIsOpen} {...props}>
       <article>
         <header>
-          <a href="#close" aria-label="Close" rel="prev" onClick={handleClose}></a>
+          <button aria-label="Close" rel="prev" onClick={handleClose}></button>
           <h3>Confirm your action!</h3>
         </header>
         <p>
