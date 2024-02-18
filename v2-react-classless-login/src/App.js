@@ -41,9 +41,7 @@ const App = () => {
             Remember me
           </label>
         </fieldset>
-        <button type="submit">
-          Login
-        </button>
+        <button type="submit">Login</button>
       </form>
     </main>
   );
