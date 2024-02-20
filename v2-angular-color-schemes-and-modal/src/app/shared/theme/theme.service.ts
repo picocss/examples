@@ -5,7 +5,7 @@ export type ColorScheme = "light" | "dark";
 const isSSR = typeof window === "undefined";
 const htmlTag = !isSSR && document.querySelector("html");
 
-const defaultTheme: ColorScheme = window.matchMedia("(prefers-color-scheme: dark)").matches
+const defaultTheme: ColorScheme = window?.matchMedia("(prefers-color-scheme: dark)").matches
   ? "dark"
   : "light";
 
