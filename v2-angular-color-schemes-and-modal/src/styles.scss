@@ -1,0 +1,12 @@
+@use "@picocss/pico/scss/pico" with (
+  $semantic-root-element: "app-root",
+  $enable-semantic-container: true
+);
+
+h1 {
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
