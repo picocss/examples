@@ -3,6 +3,8 @@ import {
   Component,
   EventEmitter,
   HostListener,
+  OnDestroy,
+  OnInit,
   Output,
   booleanAttribute,
   inject,
@@ -10,7 +12,8 @@ import {
   signal,
 } from "@angular/core";
 import { takeUntilDestroyed, toObservable } from "@angular/core/rxjs-interop";
-import { Subject, concatMap, delay, iif, skip, switchMap, tap } from "rxjs";
+
+import { Subject, delay, filter, skip, tap } from "rxjs";
 
 const modalAnimationDuration = 400;
 
@@ -38,7 +41,7 @@ const modalAnimationDuration = 400;
     </dialog>
   `,
 })
-export class ModalComponent {
+export class ModalComponent implements OnInit, OnDestroy {
   readonly #htmlEl: HTMLElement = inject(DOCUMENT).documentElement;
   readonly isModalOpen = signal<boolean>(false);
 
@@ -81,9 +84,32 @@ export class ModalComponent {
       .pipe(
         takeUntilDestroyed(),
         skip(1),
-        concatMap((shouldOpen) => iif(() => shouldOpen, this.#closeModal$, this.#openModal$))
+        filter((shouldOpen) => shouldOpen !== this.isModalOpen()),
+        tap((shouldOpen) => (shouldOpen ? this.#closeModal$.next() : this.#openModal$.next()))
       )
       .subscribe();
+  }
+
+  ngOnInit(): void {
+    const scrollBarWidth = this.getScrollBarWidth();
+    this.#htmlEl.style.setProperty("--pico-scrollbar-width", `${scrollBarWidth}px`);
+  }
+
+  ngOnDestroy(): void {
+    this.#htmlEl.style.removeProperty("--pico-scrollbar-width");
+  }
+
+  getScrollBarWidth(): number {
+    const isSSR = typeof window === "undefined";
+    if (isSSR) return 0;
+
+    const hasScrollbar = document.body.scrollHeight > screen.height;
+    if (hasScrollbar) {
+      const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+      return scrollbarWidth;
+    }
+
+    return 0;
   }
 
   overlayClicked(event: MouseEvent): void {
