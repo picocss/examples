@@ -8,7 +8,7 @@
   </a>
 </p>
 
-# React class-less login
+# Angular class-less login
 
 | Pico version | Tech stack |
 | ----- | ----- |
