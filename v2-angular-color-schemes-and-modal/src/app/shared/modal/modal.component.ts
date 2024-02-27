@@ -85,7 +85,7 @@ export class ModalComponent implements OnInit, OnDestroy {
         takeUntilDestroyed(),
         skip(1),
         filter((shouldOpen) => shouldOpen !== this.isModalOpen()),
-        tap((shouldOpen) => (shouldOpen ? this.#closeModal$.next() : this.#openModal$.next()))
+        tap((shouldOpen) => (shouldOpen ? this.#openModal$.next() : this.#closeModal$.next()))
       )
       .subscribe();
   }
