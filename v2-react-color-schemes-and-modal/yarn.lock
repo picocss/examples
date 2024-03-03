@@ -1105,10 +1105,10 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@picocss/pico@2.0.4":
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/@picocss/pico/-/pico-2.0.4.tgz#bbbb505ad800336844ce4af3f6d054f4a0d5ad2e"
-  integrity sha512-KGx1hNnG1eeM9/lZ2VvAZNDLytCZtdR3i55pMgAt2+EVgx0rMFOnHLp+TKUqpKBWaheQVEyjbq+1ZGNNcBEATA==
+"@picocss/pico@2.0.5":
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/@picocss/pico/-/pico-2.0.5.tgz#82c9c91e15c1d50bc4a690b9c4fe23705135a3e7"
+  integrity sha512-Uuu1qmQnSuQZ9DkJs5EpIQfmwlqUNvXqurCP/nZuLPRvZRJtIdo1X+wZK+GcAKxSedQiQPOhQf3ahPPQtogp0Q==
 
 "@pkgjs/parseargs@^0.11.0":
   version "0.11.0"
@@ -3717,6 +3717,7 @@ statuses@2.0.1:
   integrity sha512-OpZ3zP+jT1PI7I8nemJX4AKmAX070ZkYPVWV/AaKTJl+tXCTGyVdC1a4SL8RUQYEwk/f34ZX8UTykN68FwrqAA==
 
 "string-width-cjs@npm:string-width@^4.2.0", string-width@^4.1.0:
+  name string-width-cjs
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/string-width/-/string-width-4.2.3.tgz#269c7117d27b05ad2e536830a8ec895ef9c6d010"
   integrity sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==
