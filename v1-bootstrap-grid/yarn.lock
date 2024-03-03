@@ -23,10 +23,10 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@picocss/pico@^1.5.12":
-  version "1.5.12"
-  resolved "https://registry.yarnpkg.com/@picocss/pico/-/pico-1.5.12.tgz#f8d7260d50581ccccd6fec84183654a30f74db90"
-  integrity sha512-Q4s+DGqLw/0hdhGSL1T2u8mIJRkQingYqEjJvC+1st4FavBBekmjsTNykI7J7Xr1v5ZNMl/fIHULiXZt4GZvwg==
+"@picocss/pico@^1.5.13":
+  version "1.5.13"
+  resolved "https://registry.yarnpkg.com/@picocss/pico/-/pico-1.5.13.tgz#2a2f2f5fcdd4e3f4ceedce7f95889faf39025362"
+  integrity sha512-BPTeE4JC95+7/vsG9r+6hDR1qUkV4YZ1blI/TI6peOmM94XubjmUDE3jUi4f6DBV6WmCL76ueTct/NerJ33E8A==
 
 "@sindresorhus/merge-streams@^1.0.0":
   version "1.0.0"
