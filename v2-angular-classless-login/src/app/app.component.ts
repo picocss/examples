@@ -16,7 +16,7 @@ import { Component, ElementRef, HostListener, Renderer2, inject, viewChild } fro
           autocomplete="username"
           required
           ngModel
-        />
+        >
 
         <input
           type="password"
@@ -26,7 +26,7 @@ import { Component, ElementRef, HostListener, Renderer2, inject, viewChild } fro
           autocomplete="current-password"
           required
           ngModel
-        />
+        >
 
         <fieldset>
           <label for="remember">
