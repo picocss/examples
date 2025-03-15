@@ -112,10 +112,10 @@
     "@parcel/watcher-win32-ia32" "2.5.1"
     "@parcel/watcher-win32-x64" "2.5.1"
 
-"@picocss/pico@2.0.6":
-  version "2.0.6"
-  resolved "https://registry.yarnpkg.com/@picocss/pico/-/pico-2.0.6.tgz#16e6d253366ab245e67bac6faa95a45edcac4124"
-  integrity sha512-/d8qsykowelD6g8k8JYgmCagOIulCPHMEc2NC4u7OjmpQLmtSetLhEbt0j1n3fPNJVcrT84dRp0RfJBn3wJROA==
+"@picocss/pico@2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@picocss/pico/-/pico-2.1.0.tgz#15d23bb1fa3ac869326a9cead806c8b44692993e"
+  integrity sha512-GKaWNZeaNYkkBDk/RbWc3XuQzGQHdlVt9ascF+GfUxN5M0XBaX+8m5+1PznGkMYCwpnId2AT+QRJbis2mGfEGA==
 
 "@sindresorhus/merge-streams@^1.0.0":
   version "1.0.0"

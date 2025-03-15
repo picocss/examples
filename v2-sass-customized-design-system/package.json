@@ -16,7 +16,7 @@
     "start": "npm-run-all dev"
   },
   "devDependencies": {
-    "@picocss/pico": "2.0.6",
+    "@picocss/pico": "2.1.0",
     "autoprefixer": "^10.4.21",
     "caniuse-lite": "1.0.30001703",
     "css-declaration-sorter": "^7.2.0",
