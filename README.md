@@ -10,6 +10,8 @@
 
 # Pico.css examples
 
+> **Pico CSS is no longer maintained.** These examples stay online but will not be updated. [Read more](https://picocss.com/docs/maintenance)
+
 Minimalist templates to discover Pico in action:
 
 <details open>
